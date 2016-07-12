@@ -1,0 +1,2783 @@
+{
+  "offers": [
+    {
+      "hotelID": "1184243",
+      "roomTypeCode": "200014854",
+      "ratePlanCode": "200656964",
+      "piid": "LPASTESTPIID_V3",
+      "roomName": "Deluxe Resort King",
+      "activityID": "725553c5-0015-4c83-8c91-3c6af951b97e",
+      "numberOfNights": 3,
+      "insideWindowPenaltyNightCount": 0,
+      "insideWindowPenaltyPercentage": 100,
+      "cancellationWindowDate": "Thu, Jul 14",
+      "cancellationWindowTime": "8:59PM",
+      "cancellationTimeZoneName": "Mountain Daylight Time (US & Canada)",
+      "feePenalty": {
+        "amount": 0.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 0.0
+      },
+      "checkInDate": "8/25/16",
+      "checkOutDate": "8/28/16",
+      "offerType": "MERCHANT",
+      "maxGuests": 3,
+      "maxAdults": 3,
+      "maxChildren": 2,
+      "nightlyRates": [
+        [
+          {
+            "available": true,
+            "displayPrice": "$179",
+            "crossOutPrice": "$239",
+            "percentageDiscount": 25,
+            "discountAmount": 60,
+            "dayOfWeek": "Thu",
+            "price": 179.24,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$299",
+            "crossOutPrice": "$399",
+            "percentageDiscount": 25,
+            "discountAmount": 1.0E+2,
+            "dayOfWeek": "Fri",
+            "price": 299.24,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$299",
+            "crossOutPrice": "$399",
+            "percentageDiscount": 25,
+            "discountAmount": 1.0E+2,
+            "dayOfWeek": "Sat",
+            "price": 299.24,
+            "unformattedTotalPrice": "0"
+          }
+        ]
+      ],
+      "showETPTooltip": false,
+      "minGuestAge": 0,
+      "numberOfRoomsLeft": 0,
+      "airAttachTimeLeft": 0,
+      "price": {
+        "available": true,
+        "displayPrice": "-$262",
+        "crossOutPrice": "$259",
+        "percentageDiscount": 0E+2,
+        "discountAmount": 0,
+        "price": -261.93,
+        "displayTotalPrice": "-$786",
+        "unformattedTotalPrice": "-785.78"
+      },
+      "totalPriceWithTaxesAndFees": {
+        "amount": -692.47,
+        "currency": "USD",
+        "negative": true,
+        "currencyCode": "USD",
+        "double": -692.47
+      },
+      "currencyPosa": "USD",
+      "currencyPosu": "USD",
+      "quotedRate": -261.93,
+      "resortFee": "$35.84",
+      "drrMessage": "Stay 2 nights and save 25%",
+      "drrExpirationSecs": 3831477,
+      "drrExpirationDate": "8/24/2016",
+      "tonightOnlyDRRSaveValue": "",
+      "valueAdd": {},
+      "loyaltyEarnPoints": null,
+      "loyaltyEarnPrice": null,
+      "loyaltyBurnedPrice": {
+        "price": {
+          "amount": 0,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 0.0
+        },
+        "amount": 0,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyBurnedPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 0.00,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 0.0
+        },
+        "amount": 0.00,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "loyaltyCrossOutPrice": {
+        "price": {
+          "amount": 259.24,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 259.24
+        },
+        "amount": 259.24,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyCrossOutPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 871.03,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 871.03
+        },
+        "amount": 871.03,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "includedFees": {
+        "fees": [],
+        "displayTotal": null,
+        "totalAmount": 0,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "excludedFees": {
+        "fees": [
+          {
+            "name": "Resort fee",
+            "displayPrice": "$108",
+            "amount": 107.52,
+            "currency": "USD"
+          }
+        ],
+        "displayTotal": "$108",
+        "totalAmount": 107.52,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "amenities": {},
+      "memberExclusiveDRRPresent": false,
+      "payLater": false,
+      "mrp": false,
+      "bookable": true,
+      "roomOccupants": "rm1=a2",
+      "nonRefundableInsideWindow": true,
+      "paymentChoiceAvailable": false,
+      "modHisMeatStickerEnabled": false,
+      "airAttach": false,
+      "tonightOnlyDRRPresent": false,
+      "hasValueAdd": false,
+      "outsideWindowPrice": false,
+      "showETPDepositChoice": false,
+      "drrpresent": true,
+      "udp": true,
+      "mobileExclusive": false
+    },
+    {
+      "hotelID": "1184243",
+      "roomTypeCode": "200014854",
+      "ratePlanCode": "200067934",
+      "piid": "LPASTESTPIID_V3",
+      "roomName": "Deluxe Resort King",
+      "activityID": "725553c5-0015-4c83-8c91-3c6af951b97e",
+      "numberOfNights": 3,
+      "insideWindowPenaltyNightCount": 1,
+      "insideWindowPenaltyPercentage": 0,
+      "cancellationWindowDate": "Tue, Aug 23",
+      "cancellationWindowTime": "11:59AM",
+      "cancellationTimeZoneName": "Mountain Daylight Time (US & Canada)",
+      "feePenalty": {
+        "amount": 0.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 0.0
+      },
+      "checkInDate": "8/25/16",
+      "checkOutDate": "8/28/16",
+      "offerType": "MERCHANT",
+      "maxGuests": 3,
+      "maxAdults": 3,
+      "maxChildren": 2,
+      "nightlyRates": [
+        [
+          {
+            "available": true,
+            "displayPrice": "$239",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Thu",
+            "price": 238.99,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$399",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Fri",
+            "price": 398.99,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$399",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Sat",
+            "price": 398.99,
+            "unformattedTotalPrice": "0"
+          }
+        ]
+      ],
+      "showETPTooltip": true,
+      "minGuestAge": 0,
+      "numberOfRoomsLeft": 0,
+      "airAttachTimeLeft": 0,
+      "price": {
+        "available": true,
+        "displayPrice": "-$176",
+        "crossOutPrice": "$346",
+        "percentageDiscount": 0E+2,
+        "discountAmount": 0,
+        "price": -175.51,
+        "displayTotalPrice": "-$527",
+        "unformattedTotalPrice": "-526.53"
+      },
+      "totalPriceWithTaxesAndFees": {
+        "amount": -402.09,
+        "currency": "USD",
+        "negative": true,
+        "currencyCode": "USD",
+        "double": -402.09
+      },
+      "currencyPosa": "USD",
+      "currencyPosu": "USD",
+      "quotedRate": -175.51,
+      "resortFee": "$35.84",
+      "drrMessage": "",
+      "drrExpirationSecs": 1985071617,
+      "drrExpirationDate": "6/6/2079",
+      "tonightOnlyDRRSaveValue": "",
+      "valueAdd": {},
+      "loyaltyEarnPoints": null,
+      "loyaltyEarnPrice": null,
+      "loyaltyBurnedPrice": {
+        "price": {
+          "amount": 0,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 0.0
+        },
+        "amount": 0,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyBurnedPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 0.00,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 0.0
+        },
+        "amount": 0.00,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "loyaltyCrossOutPrice": {
+        "price": {
+          "amount": 345.66,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 345.66
+        },
+        "amount": 345.66,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyCrossOutPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 1161.41,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 1161.41
+        },
+        "amount": 1161.41,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "includedFees": {
+        "fees": [],
+        "displayTotal": null,
+        "totalAmount": 0,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "excludedFees": {
+        "fees": [
+          {
+            "name": "Resort fee",
+            "displayPrice": "$108",
+            "amount": 107.52,
+            "currency": "USD"
+          }
+        ],
+        "displayTotal": "$108",
+        "totalAmount": 107.52,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "amenities": {},
+      "memberExclusiveDRRPresent": false,
+      "payLater": false,
+      "mrp": false,
+      "bookable": true,
+      "roomOccupants": "rm1=a2",
+      "nonRefundableInsideWindow": false,
+      "paymentChoiceAvailable": true,
+      "modHisMeatStickerEnabled": false,
+      "airAttach": false,
+      "tonightOnlyDRRPresent": false,
+      "hasValueAdd": false,
+      "freeCancellable": true,
+      "outsideWindowPrice": false,
+      "showETPDepositChoice": false,
+      "drrpresent": false,
+      "udp": true,
+      "mobileExclusive": false,
+      "refundable": true
+    },
+    {
+      "hotelID": "1184243",
+      "roomTypeCode": "200014854",
+      "ratePlanCode": "200067934",
+      "piid": "LPASTESTPIID_V3",
+      "roomName": "Deluxe Resort King",
+      "activityID": "725553c5-0015-4c83-8c91-3c6af951b97e",
+      "numberOfNights": 3,
+      "insideWindowPenaltyNightCount": 1,
+      "insideWindowPenaltyPercentage": 0,
+      "cancellationWindowDate": "Tue, Aug 23",
+      "cancellationWindowTime": "11:59AM",
+      "cancellationTimeZoneName": "Mountain Daylight Time (US & Canada)",
+      "feePenalty": {
+        "amount": 0.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 0.0
+      },
+      "checkInDate": "8/25/16",
+      "checkOutDate": "8/28/16",
+      "offerType": "DIRECT_AGENCY",
+      "maxGuests": 3,
+      "maxAdults": 3,
+      "maxChildren": 2,
+      "nightlyRates": [
+        [
+          {
+            "available": true,
+            "displayPrice": "$239",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Thu",
+            "price": 238.99,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$399",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Fri",
+            "price": 398.99,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$399",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Sat",
+            "price": 398.99,
+            "unformattedTotalPrice": "0"
+          }
+        ]
+      ],
+      "showETPTooltip": true,
+      "minGuestAge": 0,
+      "numberOfRoomsLeft": 0,
+      "airAttachTimeLeft": 0,
+      "price": {
+        "available": true,
+        "displayPrice": "$346",
+        "crossOutPrice": null,
+        "displayDepositAmount": "$268",
+        "percentageDiscount": 0E+2,
+        "discountAmount": 0,
+        "price": 345.66,
+        "displayTotalPrice": "$1,037",
+        "unformattedTotalPrice": "1036.97"
+      },
+      "totalPriceWithTaxesAndFees": {
+        "amount": 1161.41,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 1161.41
+      },
+      "currencyPosa": "USD",
+      "currencyPosu": "USD",
+      "quotedRate": 345.66,
+      "resortFee": "$35.84",
+      "drrMessage": "",
+      "drrExpirationSecs": 1985071617,
+      "drrExpirationDate": "6/6/2079",
+      "tonightOnlyDRRSaveValue": "",
+      "valueAdd": {},
+      "loyaltyEarnPoints": "2,555",
+      "loyaltyEarnPrice": null,
+      "loyaltyBurnedPrice": null,
+      "totalLoyaltyBurnedPriceWithTaxesAndFees": null,
+      "loyaltyCrossOutPrice": null,
+      "totalLoyaltyCrossOutPriceWithTaxesAndFees": null,
+      "includedFees": {
+        "fees": [],
+        "displayTotal": null,
+        "totalAmount": 0,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "excludedFees": {
+        "fees": [
+          {
+            "name": "Resort fee",
+            "displayPrice": "$108",
+            "amount": 107.52,
+            "currency": "USD"
+          }
+        ],
+        "displayTotal": "$108",
+        "totalAmount": 107.52,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "amenities": {},
+      "memberExclusiveDRRPresent": false,
+      "payLater": true,
+      "mrp": false,
+      "bookable": true,
+      "roomOccupants": "rm1=a2",
+      "nonRefundableInsideWindow": false,
+      "paymentChoiceAvailable": true,
+      "modHisMeatStickerEnabled": false,
+      "airAttach": false,
+      "tonightOnlyDRRPresent": false,
+      "hasValueAdd": false,
+      "freeCancellable": true,
+      "outsideWindowPrice": false,
+      "showETPDepositChoice": true,
+      "drrpresent": false,
+      "udp": true,
+      "mobileExclusive": false,
+      "refundable": true
+    },
+    {
+      "hotelID": "1184243",
+      "roomTypeCode": "200021021",
+      "ratePlanCode": "200100319",
+      "piid": "LPASTESTPIID_V3",
+      "roomName": "Deluxe Resort Double",
+      "activityID": "725553c5-0015-4c83-8c91-3c6af951b97e",
+      "numberOfNights": 3,
+      "insideWindowPenaltyNightCount": 1,
+      "insideWindowPenaltyPercentage": 0,
+      "cancellationWindowDate": "Tue, Aug 23",
+      "cancellationWindowTime": "11:59AM",
+      "cancellationTimeZoneName": "Mountain Daylight Time (US & Canada)",
+      "feePenalty": {
+        "amount": 0.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 0.0
+      },
+      "checkInDate": "8/25/16",
+      "checkOutDate": "8/28/16",
+      "offerType": "DIRECT_AGENCY",
+      "maxGuests": 4,
+      "maxAdults": 4,
+      "maxChildren": 3,
+      "nightlyRates": [
+        [
+          {
+            "available": true,
+            "displayPrice": "$269",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Thu",
+            "price": 269.01,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$429",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Fri",
+            "price": 429.01,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$429",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Sat",
+            "price": 429.01,
+            "unformattedTotalPrice": "0"
+          }
+        ]
+      ],
+      "showETPTooltip": true,
+      "minGuestAge": 0,
+      "numberOfRoomsLeft": 0,
+      "airAttachTimeLeft": 0,
+      "price": {
+        "available": true,
+        "displayPrice": "$376",
+        "crossOutPrice": null,
+        "displayDepositAmount": "$301",
+        "percentageDiscount": 0E+2,
+        "discountAmount": 0,
+        "price": 375.68,
+        "displayTotalPrice": "$1,127",
+        "unformattedTotalPrice": "1127.03"
+      },
+      "totalPriceWithTaxesAndFees": {
+        "amount": 1262.27,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 1262.27
+      },
+      "currencyPosa": "USD",
+      "currencyPosu": "USD",
+      "quotedRate": 375.68,
+      "resortFee": "$35.84",
+      "drrMessage": "",
+      "drrExpirationSecs": 1985071617,
+      "drrExpirationDate": "6/6/2079",
+      "tonightOnlyDRRSaveValue": "",
+      "valueAdd": {},
+      "loyaltyEarnPoints": "2,778",
+      "loyaltyEarnPrice": null,
+      "loyaltyBurnedPrice": null,
+      "totalLoyaltyBurnedPriceWithTaxesAndFees": null,
+      "loyaltyCrossOutPrice": null,
+      "totalLoyaltyCrossOutPriceWithTaxesAndFees": null,
+      "includedFees": {
+        "fees": [],
+        "displayTotal": null,
+        "totalAmount": 0,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "excludedFees": {
+        "fees": [
+          {
+            "name": "Resort fee",
+            "displayPrice": "$108",
+            "amount": 107.52,
+            "currency": "USD"
+          }
+        ],
+        "displayTotal": "$108",
+        "totalAmount": 107.52,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "amenities": {},
+      "memberExclusiveDRRPresent": false,
+      "payLater": true,
+      "mrp": false,
+      "bookable": true,
+      "roomOccupants": "rm1=a2",
+      "nonRefundableInsideWindow": false,
+      "paymentChoiceAvailable": true,
+      "modHisMeatStickerEnabled": false,
+      "airAttach": false,
+      "tonightOnlyDRRPresent": false,
+      "hasValueAdd": false,
+      "freeCancellable": true,
+      "outsideWindowPrice": false,
+      "showETPDepositChoice": true,
+      "drrpresent": false,
+      "udp": true,
+      "mobileExclusive": false,
+      "refundable": true
+    },
+    {
+      "hotelID": "1184243",
+      "roomTypeCode": "200021021",
+      "ratePlanCode": "200100319",
+      "piid": "LPASTESTPIID_V3",
+      "roomName": "Deluxe Resort Double",
+      "activityID": "725553c5-0015-4c83-8c91-3c6af951b97e",
+      "numberOfNights": 3,
+      "insideWindowPenaltyNightCount": 1,
+      "insideWindowPenaltyPercentage": 0,
+      "cancellationWindowDate": "Tue, Aug 23",
+      "cancellationWindowTime": "11:59AM",
+      "cancellationTimeZoneName": "Mountain Daylight Time (US & Canada)",
+      "feePenalty": {
+        "amount": 0.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 0.0
+      },
+      "checkInDate": "8/25/16",
+      "checkOutDate": "8/28/16",
+      "offerType": "MERCHANT",
+      "maxGuests": 4,
+      "maxAdults": 4,
+      "maxChildren": 3,
+      "nightlyRates": [
+        [
+          {
+            "available": true,
+            "displayPrice": "$269",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Thu",
+            "price": 269.01,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$429",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Fri",
+            "price": 429.01,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$429",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Sat",
+            "price": 429.01,
+            "unformattedTotalPrice": "0"
+          }
+        ]
+      ],
+      "showETPTooltip": true,
+      "minGuestAge": 0,
+      "numberOfRoomsLeft": 0,
+      "airAttachTimeLeft": 0,
+      "price": {
+        "available": true,
+        "displayPrice": "-$145",
+        "crossOutPrice": "$376",
+        "percentageDiscount": 0E+2,
+        "discountAmount": 0,
+        "price": -145.49,
+        "displayTotalPrice": "-$436",
+        "unformattedTotalPrice": "-436.47"
+      },
+      "totalPriceWithTaxesAndFees": {
+        "amount": -301.23,
+        "currency": "USD",
+        "negative": true,
+        "currencyCode": "USD",
+        "double": -301.23
+      },
+      "currencyPosa": "USD",
+      "currencyPosu": "USD",
+      "quotedRate": -145.49,
+      "resortFee": "$35.84",
+      "drrMessage": "",
+      "drrExpirationSecs": 1985071617,
+      "drrExpirationDate": "6/6/2079",
+      "tonightOnlyDRRSaveValue": "",
+      "valueAdd": {},
+      "loyaltyEarnPoints": null,
+      "loyaltyEarnPrice": null,
+      "loyaltyBurnedPrice": {
+        "price": {
+          "amount": 0,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 0.0
+        },
+        "amount": 0,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyBurnedPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 0.00,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 0.0
+        },
+        "amount": 0.00,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "loyaltyCrossOutPrice": {
+        "price": {
+          "amount": 375.68,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 375.68
+        },
+        "amount": 375.68,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyCrossOutPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 1262.27,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 1262.27
+        },
+        "amount": 1262.27,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "includedFees": {
+        "fees": [],
+        "displayTotal": null,
+        "totalAmount": 0,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "excludedFees": {
+        "fees": [
+          {
+            "name": "Resort fee",
+            "displayPrice": "$108",
+            "amount": 107.52,
+            "currency": "USD"
+          }
+        ],
+        "displayTotal": "$108",
+        "totalAmount": 107.52,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "amenities": {},
+      "memberExclusiveDRRPresent": false,
+      "payLater": false,
+      "mrp": false,
+      "bookable": true,
+      "roomOccupants": "rm1=a2",
+      "nonRefundableInsideWindow": false,
+      "paymentChoiceAvailable": true,
+      "modHisMeatStickerEnabled": false,
+      "airAttach": false,
+      "tonightOnlyDRRPresent": false,
+      "hasValueAdd": false,
+      "freeCancellable": true,
+      "outsideWindowPrice": false,
+      "showETPDepositChoice": false,
+      "drrpresent": false,
+      "udp": true,
+      "mobileExclusive": false,
+      "refundable": true
+    },
+    {
+      "hotelID": "1184243",
+      "roomTypeCode": "200021024",
+      "ratePlanCode": "200100334",
+      "piid": "LPASTESTPIID_V3",
+      "roomName": "Deluxe Panoramic View Double",
+      "activityID": "725553c5-0015-4c83-8c91-3c6af951b97e",
+      "numberOfNights": 3,
+      "insideWindowPenaltyNightCount": 1,
+      "insideWindowPenaltyPercentage": 0,
+      "cancellationWindowDate": "Tue, Aug 23",
+      "cancellationWindowTime": "11:59AM",
+      "cancellationTimeZoneName": "Mountain Daylight Time (US & Canada)",
+      "feePenalty": {
+        "amount": 0.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 0.0
+      },
+      "checkInDate": "8/25/16",
+      "checkOutDate": "8/28/16",
+      "offerType": "MERCHANT",
+      "maxGuests": 4,
+      "maxAdults": 4,
+      "maxChildren": 3,
+      "nightlyRates": [
+        [
+          {
+            "available": true,
+            "displayPrice": "$289",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Thu",
+            "price": 289.01,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$449",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Fri",
+            "price": 449.01,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$449",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Sat",
+            "price": 449.01,
+            "unformattedTotalPrice": "0"
+          }
+        ]
+      ],
+      "showETPTooltip": true,
+      "minGuestAge": 0,
+      "numberOfRoomsLeft": 0,
+      "airAttachTimeLeft": 0,
+      "price": {
+        "available": true,
+        "displayPrice": "-$125",
+        "crossOutPrice": "$396",
+        "percentageDiscount": 0E+2,
+        "discountAmount": 0,
+        "price": -125.49,
+        "displayTotalPrice": "-$376",
+        "unformattedTotalPrice": "-376.47"
+      },
+      "totalPriceWithTaxesAndFees": {
+        "amount": -234.03,
+        "currency": "USD",
+        "negative": true,
+        "currencyCode": "USD",
+        "double": -234.03
+      },
+      "currencyPosa": "USD",
+      "currencyPosu": "USD",
+      "quotedRate": -125.49,
+      "resortFee": "$35.84",
+      "drrMessage": "",
+      "drrExpirationSecs": 1985071617,
+      "drrExpirationDate": "6/6/2079",
+      "tonightOnlyDRRSaveValue": "",
+      "valueAdd": {},
+      "loyaltyEarnPoints": null,
+      "loyaltyEarnPrice": null,
+      "loyaltyBurnedPrice": {
+        "price": {
+          "amount": 0,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 0.0
+        },
+        "amount": 0,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyBurnedPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 0.00,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 0.0
+        },
+        "amount": 0.00,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "loyaltyCrossOutPrice": {
+        "price": {
+          "amount": 395.68,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 395.68
+        },
+        "amount": 395.68,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyCrossOutPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 1329.47,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 1329.47
+        },
+        "amount": 1329.47,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "includedFees": {
+        "fees": [],
+        "displayTotal": null,
+        "totalAmount": 0,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "excludedFees": {
+        "fees": [
+          {
+            "name": "Resort fee",
+            "displayPrice": "$108",
+            "amount": 107.52,
+            "currency": "USD"
+          }
+        ],
+        "displayTotal": "$108",
+        "totalAmount": 107.52,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "amenities": {},
+      "memberExclusiveDRRPresent": false,
+      "payLater": false,
+      "mrp": false,
+      "bookable": true,
+      "roomOccupants": "rm1=a2",
+      "nonRefundableInsideWindow": false,
+      "paymentChoiceAvailable": true,
+      "modHisMeatStickerEnabled": false,
+      "airAttach": false,
+      "tonightOnlyDRRPresent": false,
+      "hasValueAdd": false,
+      "freeCancellable": true,
+      "outsideWindowPrice": false,
+      "showETPDepositChoice": false,
+      "drrpresent": false,
+      "udp": true,
+      "mobileExclusive": false,
+      "refundable": true
+    },
+    {
+      "hotelID": "1184243",
+      "roomTypeCode": "200021024",
+      "ratePlanCode": "200100334",
+      "piid": "LPASTESTPIID_V3",
+      "roomName": "Deluxe Panoramic View Double",
+      "activityID": "725553c5-0015-4c83-8c91-3c6af951b97e",
+      "numberOfNights": 3,
+      "insideWindowPenaltyNightCount": 1,
+      "insideWindowPenaltyPercentage": 0,
+      "cancellationWindowDate": "Tue, Aug 23",
+      "cancellationWindowTime": "11:59AM",
+      "cancellationTimeZoneName": "Mountain Daylight Time (US & Canada)",
+      "feePenalty": {
+        "amount": 0.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 0.0
+      },
+      "checkInDate": "8/25/16",
+      "checkOutDate": "8/28/16",
+      "offerType": "DIRECT_AGENCY",
+      "maxGuests": 4,
+      "maxAdults": 4,
+      "maxChildren": 3,
+      "nightlyRates": [
+        [
+          {
+            "available": true,
+            "displayPrice": "$289",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Thu",
+            "price": 289.01,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$449",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Fri",
+            "price": 449.01,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$449",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Sat",
+            "price": 449.01,
+            "unformattedTotalPrice": "0"
+          }
+        ]
+      ],
+      "showETPTooltip": true,
+      "minGuestAge": 0,
+      "numberOfRoomsLeft": 0,
+      "airAttachTimeLeft": 0,
+      "price": {
+        "available": true,
+        "displayPrice": "$396",
+        "crossOutPrice": null,
+        "displayDepositAmount": "$324",
+        "percentageDiscount": 0E+2,
+        "discountAmount": 0,
+        "price": 395.68,
+        "displayTotalPrice": "$1,187",
+        "unformattedTotalPrice": "1187.03"
+      },
+      "totalPriceWithTaxesAndFees": {
+        "amount": 1329.47,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 1329.47
+      },
+      "currencyPosa": "USD",
+      "currencyPosu": "USD",
+      "quotedRate": 395.68,
+      "resortFee": "$35.84",
+      "drrMessage": "",
+      "drrExpirationSecs": 1985071617,
+      "drrExpirationDate": "6/6/2079",
+      "tonightOnlyDRRSaveValue": "",
+      "valueAdd": {},
+      "loyaltyEarnPoints": "2,925",
+      "loyaltyEarnPrice": null,
+      "loyaltyBurnedPrice": null,
+      "totalLoyaltyBurnedPriceWithTaxesAndFees": null,
+      "loyaltyCrossOutPrice": null,
+      "totalLoyaltyCrossOutPriceWithTaxesAndFees": null,
+      "includedFees": {
+        "fees": [],
+        "displayTotal": null,
+        "totalAmount": 0,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "excludedFees": {
+        "fees": [
+          {
+            "name": "Resort fee",
+            "displayPrice": "$108",
+            "amount": 107.52,
+            "currency": "USD"
+          }
+        ],
+        "displayTotal": "$108",
+        "totalAmount": 107.52,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "amenities": {},
+      "memberExclusiveDRRPresent": false,
+      "payLater": true,
+      "mrp": false,
+      "bookable": true,
+      "roomOccupants": "rm1=a2",
+      "nonRefundableInsideWindow": false,
+      "paymentChoiceAvailable": true,
+      "modHisMeatStickerEnabled": false,
+      "airAttach": false,
+      "tonightOnlyDRRPresent": false,
+      "hasValueAdd": false,
+      "freeCancellable": true,
+      "outsideWindowPrice": false,
+      "showETPDepositChoice": true,
+      "drrpresent": false,
+      "udp": true,
+      "mobileExclusive": false,
+      "refundable": true
+    },
+    {
+      "hotelID": "1184243",
+      "roomTypeCode": "200014877",
+      "ratePlanCode": "200068124",
+      "piid": "LPASTESTPIID_V3",
+      "roomName": "Deluxe Panoramic View King",
+      "activityID": "725553c5-0015-4c83-8c91-3c6af951b97e",
+      "numberOfNights": 3,
+      "insideWindowPenaltyNightCount": 1,
+      "insideWindowPenaltyPercentage": 0,
+      "cancellationWindowDate": "Tue, Aug 23",
+      "cancellationWindowTime": "11:59AM",
+      "cancellationTimeZoneName": "Mountain Daylight Time (US & Canada)",
+      "feePenalty": {
+        "amount": 0.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 0.0
+      },
+      "checkInDate": "8/25/16",
+      "checkOutDate": "8/28/16",
+      "offerType": "DIRECT_AGENCY",
+      "maxGuests": 3,
+      "maxAdults": 3,
+      "maxChildren": 2,
+      "nightlyRates": [
+        [
+          {
+            "available": true,
+            "displayPrice": "$289",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Thu",
+            "price": 289.01,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$449",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Fri",
+            "price": 449.01,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$449",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Sat",
+            "price": 449.01,
+            "unformattedTotalPrice": "0"
+          }
+        ]
+      ],
+      "showETPTooltip": true,
+      "minGuestAge": 0,
+      "numberOfRoomsLeft": 0,
+      "airAttachTimeLeft": 0,
+      "price": {
+        "available": true,
+        "displayPrice": "$396",
+        "crossOutPrice": null,
+        "displayDepositAmount": "$324",
+        "percentageDiscount": 0E+2,
+        "discountAmount": 0,
+        "price": 395.68,
+        "displayTotalPrice": "$1,187",
+        "unformattedTotalPrice": "1187.03"
+      },
+      "totalPriceWithTaxesAndFees": {
+        "amount": 1329.47,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 1329.47
+      },
+      "currencyPosa": "USD",
+      "currencyPosu": "USD",
+      "quotedRate": 395.68,
+      "resortFee": "$35.84",
+      "drrMessage": "",
+      "drrExpirationSecs": 1985071617,
+      "drrExpirationDate": "6/6/2079",
+      "tonightOnlyDRRSaveValue": "",
+      "valueAdd": {},
+      "loyaltyEarnPoints": "2,925",
+      "loyaltyEarnPrice": null,
+      "loyaltyBurnedPrice": null,
+      "totalLoyaltyBurnedPriceWithTaxesAndFees": null,
+      "loyaltyCrossOutPrice": null,
+      "totalLoyaltyCrossOutPriceWithTaxesAndFees": null,
+      "includedFees": {
+        "fees": [],
+        "displayTotal": null,
+        "totalAmount": 0,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "excludedFees": {
+        "fees": [
+          {
+            "name": "Resort fee",
+            "displayPrice": "$108",
+            "amount": 107.52,
+            "currency": "USD"
+          }
+        ],
+        "displayTotal": "$108",
+        "totalAmount": 107.52,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "amenities": {},
+      "memberExclusiveDRRPresent": false,
+      "payLater": true,
+      "mrp": false,
+      "bookable": true,
+      "roomOccupants": "rm1=a2",
+      "nonRefundableInsideWindow": false,
+      "paymentChoiceAvailable": true,
+      "modHisMeatStickerEnabled": false,
+      "airAttach": false,
+      "tonightOnlyDRRPresent": false,
+      "hasValueAdd": false,
+      "freeCancellable": true,
+      "outsideWindowPrice": false,
+      "showETPDepositChoice": true,
+      "drrpresent": false,
+      "udp": true,
+      "mobileExclusive": false,
+      "refundable": true
+    },
+    {
+      "hotelID": "1184243",
+      "roomTypeCode": "200014877",
+      "ratePlanCode": "200068124",
+      "piid": "LPASTESTPIID_V3",
+      "roomName": "Deluxe Panoramic View King",
+      "activityID": "725553c5-0015-4c83-8c91-3c6af951b97e",
+      "numberOfNights": 3,
+      "insideWindowPenaltyNightCount": 1,
+      "insideWindowPenaltyPercentage": 0,
+      "cancellationWindowDate": "Tue, Aug 23",
+      "cancellationWindowTime": "11:59AM",
+      "cancellationTimeZoneName": "Mountain Daylight Time (US & Canada)",
+      "feePenalty": {
+        "amount": 0.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 0.0
+      },
+      "checkInDate": "8/25/16",
+      "checkOutDate": "8/28/16",
+      "offerType": "MERCHANT",
+      "maxGuests": 3,
+      "maxAdults": 3,
+      "maxChildren": 2,
+      "nightlyRates": [
+        [
+          {
+            "available": true,
+            "displayPrice": "$289",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Thu",
+            "price": 289.01,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$449",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Fri",
+            "price": 449.01,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$449",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Sat",
+            "price": 449.01,
+            "unformattedTotalPrice": "0"
+          }
+        ]
+      ],
+      "showETPTooltip": true,
+      "minGuestAge": 0,
+      "numberOfRoomsLeft": 0,
+      "airAttachTimeLeft": 0,
+      "price": {
+        "available": true,
+        "displayPrice": "-$125",
+        "crossOutPrice": "$396",
+        "percentageDiscount": 0E+2,
+        "discountAmount": 0,
+        "price": -125.49,
+        "displayTotalPrice": "-$376",
+        "unformattedTotalPrice": "-376.47"
+      },
+      "totalPriceWithTaxesAndFees": {
+        "amount": -234.03,
+        "currency": "USD",
+        "negative": true,
+        "currencyCode": "USD",
+        "double": -234.03
+      },
+      "currencyPosa": "USD",
+      "currencyPosu": "USD",
+      "quotedRate": -125.49,
+      "resortFee": "$35.84",
+      "drrMessage": "",
+      "drrExpirationSecs": 1985071617,
+      "drrExpirationDate": "6/6/2079",
+      "tonightOnlyDRRSaveValue": "",
+      "valueAdd": {},
+      "loyaltyEarnPoints": null,
+      "loyaltyEarnPrice": null,
+      "loyaltyBurnedPrice": {
+        "price": {
+          "amount": 0,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 0.0
+        },
+        "amount": 0,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyBurnedPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 0.00,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 0.0
+        },
+        "amount": 0.00,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "loyaltyCrossOutPrice": {
+        "price": {
+          "amount": 395.68,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 395.68
+        },
+        "amount": 395.68,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyCrossOutPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 1329.47,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 1329.47
+        },
+        "amount": 1329.47,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "includedFees": {
+        "fees": [],
+        "displayTotal": null,
+        "totalAmount": 0,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "excludedFees": {
+        "fees": [
+          {
+            "name": "Resort fee",
+            "displayPrice": "$108",
+            "amount": 107.52,
+            "currency": "USD"
+          }
+        ],
+        "displayTotal": "$108",
+        "totalAmount": 107.52,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "amenities": {},
+      "memberExclusiveDRRPresent": false,
+      "payLater": false,
+      "mrp": false,
+      "bookable": true,
+      "roomOccupants": "rm1=a2",
+      "nonRefundableInsideWindow": false,
+      "paymentChoiceAvailable": true,
+      "modHisMeatStickerEnabled": false,
+      "airAttach": false,
+      "tonightOnlyDRRPresent": false,
+      "hasValueAdd": false,
+      "freeCancellable": true,
+      "outsideWindowPrice": false,
+      "showETPDepositChoice": false,
+      "drrpresent": false,
+      "udp": true,
+      "mobileExclusive": false,
+      "refundable": true
+    },
+    {
+      "hotelID": "1184243",
+      "roomTypeCode": "343768",
+      "ratePlanCode": "1072942",
+      "piid": "LPASTESTPIID_V3",
+      "roomName": "Tower Room (No Resort Fee)",
+      "activityID": "725553c5-0015-4c83-8c91-3c6af951b97e",
+      "numberOfNights": 3,
+      "insideWindowPenaltyNightCount": 1,
+      "insideWindowPenaltyPercentage": 0,
+      "cancellationWindowDate": "Tue, Aug 23",
+      "cancellationWindowTime": "11:59AM",
+      "cancellationTimeZoneName": "Mountain Daylight Time (US & Canada)",
+      "feePenalty": {
+        "amount": 0.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 0.0
+      },
+      "checkInDate": "8/25/16",
+      "checkOutDate": "8/28/16",
+      "offerType": "DIRECT_AGENCY",
+      "maxGuests": 4,
+      "maxAdults": 4,
+      "maxChildren": 3,
+      "nightlyRates": [
+        [
+          {
+            "available": true,
+            "displayPrice": "$339",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Thu",
+            "price": 338.99,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$529",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Fri",
+            "price": 529.01,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$529",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Sat",
+            "price": 529.01,
+            "unformattedTotalPrice": "0"
+          }
+        ]
+      ],
+      "showETPTooltip": true,
+      "minGuestAge": 0,
+      "numberOfRoomsLeft": 0,
+      "airAttachTimeLeft": 0,
+      "price": {
+        "available": true,
+        "displayPrice": "$466",
+        "crossOutPrice": null,
+        "displayDepositAmount": "$380",
+        "percentageDiscount": 0E+2,
+        "discountAmount": 0,
+        "price": 465.67,
+        "displayTotalPrice": "$1,397",
+        "unformattedTotalPrice": "1397.01"
+      },
+      "totalPriceWithTaxesAndFees": {
+        "amount": 1564.65,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 1564.65
+      },
+      "currencyPosa": "USD",
+      "currencyPosu": "USD",
+      "quotedRate": 465.67,
+      "resortFee": "$35.84",
+      "drrMessage": "",
+      "drrExpirationSecs": 1985071617,
+      "drrExpirationDate": "6/6/2079",
+      "tonightOnlyDRRSaveValue": "",
+      "valueAdd": {},
+      "loyaltyEarnPoints": "3,442",
+      "loyaltyEarnPrice": null,
+      "loyaltyBurnedPrice": null,
+      "totalLoyaltyBurnedPriceWithTaxesAndFees": null,
+      "loyaltyCrossOutPrice": null,
+      "totalLoyaltyCrossOutPriceWithTaxesAndFees": null,
+      "includedFees": {
+        "fees": [],
+        "displayTotal": null,
+        "totalAmount": 0,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "excludedFees": {
+        "fees": [
+          {
+            "name": "Resort fee",
+            "displayPrice": "$108",
+            "amount": 107.52,
+            "currency": "USD"
+          }
+        ],
+        "displayTotal": "$108",
+        "totalAmount": 107.52,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "amenities": {
+        "2194": "Breakfast for 2",
+        "2191": "Free High-Speed Internet"
+      },
+      "memberExclusiveDRRPresent": false,
+      "payLater": true,
+      "mrp": false,
+      "bookable": true,
+      "roomOccupants": "rm1=a2",
+      "nonRefundableInsideWindow": false,
+      "paymentChoiceAvailable": true,
+      "modHisMeatStickerEnabled": false,
+      "airAttach": false,
+      "tonightOnlyDRRPresent": false,
+      "hasValueAdd": false,
+      "freeCancellable": true,
+      "outsideWindowPrice": false,
+      "showETPDepositChoice": true,
+      "drrpresent": false,
+      "udp": true,
+      "mobileExclusive": false,
+      "refundable": true
+    },
+    {
+      "hotelID": "1184243",
+      "roomTypeCode": "343768",
+      "ratePlanCode": "1072942",
+      "piid": "LPASTESTPIID_V3",
+      "roomName": "Tower Room (No Resort Fee)",
+      "activityID": "725553c5-0015-4c83-8c91-3c6af951b97e",
+      "numberOfNights": 3,
+      "insideWindowPenaltyNightCount": 1,
+      "insideWindowPenaltyPercentage": 0,
+      "cancellationWindowDate": "Tue, Aug 23",
+      "cancellationWindowTime": "11:59AM",
+      "cancellationTimeZoneName": "Mountain Daylight Time (US & Canada)",
+      "feePenalty": {
+        "amount": 0.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 0.0
+      },
+      "checkInDate": "8/25/16",
+      "checkOutDate": "8/28/16",
+      "offerType": "MERCHANT",
+      "maxGuests": 4,
+      "maxAdults": 4,
+      "maxChildren": 3,
+      "nightlyRates": [
+        [
+          {
+            "available": true,
+            "displayPrice": "$339",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Thu",
+            "price": 338.99,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$529",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Fri",
+            "price": 529.01,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$529",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Sat",
+            "price": 529.01,
+            "unformattedTotalPrice": "0"
+          }
+        ]
+      ],
+      "showETPTooltip": true,
+      "minGuestAge": 0,
+      "numberOfRoomsLeft": 0,
+      "airAttachTimeLeft": 0,
+      "price": {
+        "available": true,
+        "displayPrice": "-$56",
+        "crossOutPrice": "$466",
+        "percentageDiscount": 0E+2,
+        "discountAmount": 0,
+        "price": -55.5,
+        "displayTotalPrice": "-$166",
+        "unformattedTotalPrice": "-166.49"
+      },
+      "totalPriceWithTaxesAndFees": {
+        "amount": 1.15,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 1.15
+      },
+      "currencyPosa": "USD",
+      "currencyPosu": "USD",
+      "quotedRate": -55.50,
+      "resortFee": "$35.84",
+      "drrMessage": "",
+      "drrExpirationSecs": 1985071617,
+      "drrExpirationDate": "6/6/2079",
+      "tonightOnlyDRRSaveValue": "",
+      "valueAdd": {},
+      "loyaltyEarnPoints": "2",
+      "loyaltyEarnPrice": null,
+      "loyaltyBurnedPrice": {
+        "price": {
+          "amount": 0,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 0.0
+        },
+        "amount": 0,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyBurnedPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 1.15,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 1.15
+        },
+        "amount": 1.15,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "loyaltyCrossOutPrice": {
+        "price": {
+          "amount": 465.67,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 465.67
+        },
+        "amount": 465.67,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyCrossOutPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 1564.65,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 1564.65
+        },
+        "amount": 1564.65,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "includedFees": {
+        "fees": [],
+        "displayTotal": null,
+        "totalAmount": 0,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "excludedFees": {
+        "fees": [
+          {
+            "name": "Resort fee",
+            "displayPrice": "$108",
+            "amount": 107.52,
+            "currency": "USD"
+          }
+        ],
+        "displayTotal": "$108",
+        "totalAmount": 107.52,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "amenities": {
+        "2194": "Breakfast for 2",
+        "2191": "Free High-Speed Internet"
+      },
+      "memberExclusiveDRRPresent": false,
+      "payLater": false,
+      "mrp": false,
+      "bookable": true,
+      "roomOccupants": "rm1=a2",
+      "nonRefundableInsideWindow": false,
+      "paymentChoiceAvailable": true,
+      "modHisMeatStickerEnabled": false,
+      "airAttach": false,
+      "tonightOnlyDRRPresent": false,
+      "hasValueAdd": false,
+      "freeCancellable": true,
+      "outsideWindowPrice": false,
+      "showETPDepositChoice": false,
+      "drrpresent": false,
+      "udp": true,
+      "mobileExclusive": false,
+      "refundable": true
+    },
+    {
+      "hotelID": "1184243",
+      "roomTypeCode": "66573",
+      "ratePlanCode": "151646",
+      "piid": "LPASTESTPIID_V3",
+      "roomName": "Parlor Suite (No Resort Fee)",
+      "activityID": "725553c5-0015-4c83-8c91-3c6af951b97e",
+      "numberOfNights": 3,
+      "insideWindowPenaltyNightCount": 1,
+      "insideWindowPenaltyPercentage": 0,
+      "cancellationWindowDate": "Tue, Aug 23",
+      "cancellationWindowTime": "11:59AM",
+      "cancellationTimeZoneName": "Mountain Daylight Time (US & Canada)",
+      "feePenalty": {
+        "amount": 0.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 0.0
+      },
+      "checkInDate": "8/25/16",
+      "checkOutDate": "8/28/16",
+      "offerType": "DIRECT_AGENCY",
+      "maxGuests": 4,
+      "maxAdults": 4,
+      "maxChildren": 3,
+      "nightlyRates": [
+        [
+          {
+            "available": true,
+            "displayPrice": "$700",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Thu",
+            "price": 700.0,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$900",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Fri",
+            "price": 900.0,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$900",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Sat",
+            "price": 900.0,
+            "unformattedTotalPrice": "0"
+          }
+        ]
+      ],
+      "showETPTooltip": true,
+      "minGuestAge": 0,
+      "numberOfRoomsLeft": 0,
+      "airAttachTimeLeft": 0,
+      "price": {
+        "available": true,
+        "displayPrice": "$833",
+        "crossOutPrice": null,
+        "displayDepositAmount": "$784",
+        "percentageDiscount": 0E+2,
+        "discountAmount": 0,
+        "price": 833.33,
+        "displayTotalPrice": "$2,500",
+        "unformattedTotalPrice": "2500.0"
+      },
+      "totalPriceWithTaxesAndFees": {
+        "amount": 2800.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 2800.0
+      },
+      "currencyPosa": "USD",
+      "currencyPosu": "USD",
+      "quotedRate": 833.33,
+      "resortFee": "$35.84",
+      "drrMessage": "",
+      "drrExpirationSecs": 1985071617,
+      "drrExpirationDate": "6/6/2079",
+      "tonightOnlyDRRSaveValue": "",
+      "valueAdd": {},
+      "loyaltyEarnPoints": "6,160",
+      "loyaltyEarnPrice": null,
+      "loyaltyBurnedPrice": null,
+      "totalLoyaltyBurnedPriceWithTaxesAndFees": null,
+      "loyaltyCrossOutPrice": null,
+      "totalLoyaltyCrossOutPriceWithTaxesAndFees": null,
+      "includedFees": {
+        "fees": [],
+        "displayTotal": null,
+        "totalAmount": 0,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "excludedFees": {
+        "fees": [
+          {
+            "name": "Resort fee",
+            "displayPrice": "$108",
+            "amount": 107.52,
+            "currency": "USD"
+          }
+        ],
+        "displayTotal": "$108",
+        "totalAmount": 107.52,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "amenities": {
+        "2194": "Breakfast for 2",
+        "2191": "Free High-Speed Internet"
+      },
+      "memberExclusiveDRRPresent": false,
+      "payLater": true,
+      "mrp": false,
+      "bookable": true,
+      "roomOccupants": "rm1=a2",
+      "nonRefundableInsideWindow": false,
+      "paymentChoiceAvailable": true,
+      "modHisMeatStickerEnabled": false,
+      "airAttach": false,
+      "tonightOnlyDRRPresent": false,
+      "hasValueAdd": false,
+      "freeCancellable": true,
+      "outsideWindowPrice": false,
+      "showETPDepositChoice": true,
+      "drrpresent": false,
+      "udp": true,
+      "mobileExclusive": false,
+      "refundable": true
+    },
+    {
+      "hotelID": "1184243",
+      "roomTypeCode": "66573",
+      "ratePlanCode": "151646",
+      "piid": "LPASTESTPIID_V3",
+      "roomName": "Parlor Suite (No Resort Fee)",
+      "activityID": "725553c5-0015-4c83-8c91-3c6af951b97e",
+      "numberOfNights": 3,
+      "insideWindowPenaltyNightCount": 1,
+      "insideWindowPenaltyPercentage": 0,
+      "cancellationWindowDate": "Tue, Aug 23",
+      "cancellationWindowTime": "11:59AM",
+      "cancellationTimeZoneName": "Mountain Daylight Time (US & Canada)",
+      "feePenalty": {
+        "amount": 0.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 0.0
+      },
+      "checkInDate": "8/25/16",
+      "checkOutDate": "8/28/16",
+      "offerType": "MERCHANT",
+      "maxGuests": 4,
+      "maxAdults": 4,
+      "maxChildren": 3,
+      "nightlyRates": [
+        [
+          {
+            "available": true,
+            "displayPrice": "$700",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Thu",
+            "price": 700.0,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$900",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Fri",
+            "price": 900.0,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$900",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Sat",
+            "price": 900.0,
+            "unformattedTotalPrice": "0"
+          }
+        ]
+      ],
+      "showETPTooltip": true,
+      "minGuestAge": 0,
+      "numberOfRoomsLeft": 0,
+      "airAttachTimeLeft": 0,
+      "price": {
+        "available": true,
+        "displayPrice": "$312",
+        "crossOutPrice": "$833",
+        "percentageDiscount": 62,
+        "discountAmount": 5.2E+2,
+        "price": 312.17,
+        "displayTotalPrice": "$937",
+        "unformattedTotalPrice": "936.5"
+      },
+      "totalPriceWithTaxesAndFees": {
+        "amount": 1236.50,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 1236.5
+      },
+      "currencyPosa": "USD",
+      "currencyPosu": "USD",
+      "quotedRate": 312.17,
+      "resortFee": "$35.84",
+      "drrMessage": "",
+      "drrExpirationSecs": 1985071617,
+      "drrExpirationDate": "6/6/2079",
+      "tonightOnlyDRRSaveValue": "",
+      "valueAdd": {},
+      "loyaltyEarnPoints": "2,720",
+      "loyaltyEarnPrice": null,
+      "loyaltyBurnedPrice": {
+        "price": {
+          "amount": 312,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 312.0
+        },
+        "amount": 312,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyBurnedPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 1236.50,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 1236.5
+        },
+        "amount": 1236.50,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "loyaltyCrossOutPrice": {
+        "price": {
+          "amount": 833.34,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 833.34
+        },
+        "amount": 833.34,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyCrossOutPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 2800.00,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 2800.0
+        },
+        "amount": 2800.00,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "includedFees": {
+        "fees": [],
+        "displayTotal": null,
+        "totalAmount": 0,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "excludedFees": {
+        "fees": [
+          {
+            "name": "Resort fee",
+            "displayPrice": "$108",
+            "amount": 107.52,
+            "currency": "USD"
+          }
+        ],
+        "displayTotal": "$108",
+        "totalAmount": 107.52,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "amenities": {
+        "2194": "Breakfast for 2",
+        "2191": "Free High-Speed Internet"
+      },
+      "memberExclusiveDRRPresent": false,
+      "payLater": false,
+      "mrp": false,
+      "bookable": true,
+      "roomOccupants": "rm1=a2",
+      "nonRefundableInsideWindow": false,
+      "paymentChoiceAvailable": true,
+      "modHisMeatStickerEnabled": false,
+      "airAttach": false,
+      "tonightOnlyDRRPresent": false,
+      "hasValueAdd": false,
+      "freeCancellable": true,
+      "outsideWindowPrice": false,
+      "showETPDepositChoice": false,
+      "drrpresent": false,
+      "udp": true,
+      "mobileExclusive": false,
+      "refundable": true
+    },
+    {
+      "hotelID": "1184243",
+      "roomTypeCode": "343770",
+      "ratePlanCode": "1072944",
+      "piid": "LPASTESTPIID_V3",
+      "roomName": "Salon Suite (No Resort Fee)",
+      "activityID": "725553c5-0015-4c83-8c91-3c6af951b97e",
+      "numberOfNights": 3,
+      "insideWindowPenaltyNightCount": 1,
+      "insideWindowPenaltyPercentage": 0,
+      "cancellationWindowDate": "Tue, Aug 23",
+      "cancellationWindowTime": "11:59AM",
+      "cancellationTimeZoneName": "Mountain Daylight Time (US & Canada)",
+      "feePenalty": {
+        "amount": 0.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 0.0
+      },
+      "checkInDate": "8/25/16",
+      "checkOutDate": "8/28/16",
+      "offerType": "MERCHANT",
+      "maxGuests": 4,
+      "maxAdults": 4,
+      "maxChildren": 3,
+      "nightlyRates": [
+        [
+          {
+            "available": true,
+            "displayPrice": "$900",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Thu",
+            "price": 900.0,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$1,100",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Fri",
+            "price": 1100.0,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$1,100",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Sat",
+            "price": 1100.0,
+            "unformattedTotalPrice": "0"
+          }
+        ]
+      ],
+      "showETPTooltip": true,
+      "minGuestAge": 0,
+      "numberOfRoomsLeft": 0,
+      "airAttachTimeLeft": 0,
+      "price": {
+        "available": true,
+        "displayPrice": "$512",
+        "crossOutPrice": "$1,033",
+        "percentageDiscount": 50,
+        "discountAmount": 5.2E+2,
+        "price": 512.17,
+        "displayTotalPrice": "$1,537",
+        "unformattedTotalPrice": "1536.5"
+      },
+      "totalPriceWithTaxesAndFees": {
+        "amount": 1908.50,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 1908.5
+      },
+      "currencyPosa": "USD",
+      "currencyPosu": "USD",
+      "quotedRate": 512.17,
+      "resortFee": "$35.84",
+      "drrMessage": "",
+      "drrExpirationSecs": 1985071617,
+      "drrExpirationDate": "6/6/2079",
+      "tonightOnlyDRRSaveValue": "",
+      "valueAdd": {},
+      "loyaltyEarnPoints": "4,199",
+      "loyaltyEarnPrice": null,
+      "loyaltyBurnedPrice": {
+        "price": {
+          "amount": 512,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 512.0
+        },
+        "amount": 512,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyBurnedPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 1908.50,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 1908.5
+        },
+        "amount": 1908.50,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "loyaltyCrossOutPrice": {
+        "price": {
+          "amount": 1033.34,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 1033.34
+        },
+        "amount": 1033.34,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "totalLoyaltyCrossOutPriceWithTaxesAndFees": {
+        "price": {
+          "amount": 3472.00,
+          "currency": "USD",
+          "negative": false,
+          "currencyCode": "USD",
+          "double": 3472.0
+        },
+        "amount": 3472.00,
+        "currency": {
+          "type": "currency",
+          "roundingIncrement": 0.0,
+          "symbol": "$",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840,
+          "displayName": "US Dollar",
+          "subtype": "USD"
+        },
+        "currencySymbol": "$",
+        "currencyCode": "USD"
+      },
+      "includedFees": {
+        "fees": [],
+        "displayTotal": null,
+        "totalAmount": 0,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "excludedFees": {
+        "fees": [
+          {
+            "name": "Resort fee",
+            "displayPrice": "$108",
+            "amount": 107.52,
+            "currency": "USD"
+          }
+        ],
+        "displayTotal": "$108",
+        "totalAmount": 107.52,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "amenities": {
+        "2194": "Breakfast for 2",
+        "2191": "Free High-Speed Internet"
+      },
+      "memberExclusiveDRRPresent": false,
+      "payLater": false,
+      "mrp": false,
+      "bookable": true,
+      "roomOccupants": "rm1=a2",
+      "nonRefundableInsideWindow": false,
+      "paymentChoiceAvailable": true,
+      "modHisMeatStickerEnabled": false,
+      "airAttach": false,
+      "tonightOnlyDRRPresent": false,
+      "hasValueAdd": false,
+      "freeCancellable": true,
+      "outsideWindowPrice": false,
+      "showETPDepositChoice": false,
+      "drrpresent": false,
+      "udp": true,
+      "mobileExclusive": false,
+      "refundable": true
+    },
+    {
+      "hotelID": "1184243",
+      "roomTypeCode": "343770",
+      "ratePlanCode": "1072944",
+      "piid": "LPASTESTPIID_V3",
+      "roomName": "Salon Suite (No Resort Fee)",
+      "activityID": "725553c5-0015-4c83-8c91-3c6af951b97e",
+      "numberOfNights": 3,
+      "insideWindowPenaltyNightCount": 1,
+      "insideWindowPenaltyPercentage": 0,
+      "cancellationWindowDate": "Tue, Aug 23",
+      "cancellationWindowTime": "11:59AM",
+      "cancellationTimeZoneName": "Mountain Daylight Time (US & Canada)",
+      "feePenalty": {
+        "amount": 0.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 0.0
+      },
+      "checkInDate": "8/25/16",
+      "checkOutDate": "8/28/16",
+      "offerType": "DIRECT_AGENCY",
+      "maxGuests": 4,
+      "maxAdults": 4,
+      "maxChildren": 3,
+      "nightlyRates": [
+        [
+          {
+            "available": true,
+            "displayPrice": "$900",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Thu",
+            "price": 900.0,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$1,100",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Fri",
+            "price": 1100.0,
+            "unformattedTotalPrice": "0"
+          },
+          {
+            "available": true,
+            "displayPrice": "$1,100",
+            "crossOutPrice": null,
+            "percentageDiscount": 0E+2,
+            "discountAmount": 0,
+            "dayOfWeek": "Sat",
+            "price": 1100.0,
+            "unformattedTotalPrice": "0"
+          }
+        ]
+      ],
+      "showETPTooltip": true,
+      "minGuestAge": 0,
+      "numberOfRoomsLeft": 0,
+      "airAttachTimeLeft": 0,
+      "price": {
+        "available": true,
+        "displayPrice": "$1,033",
+        "crossOutPrice": null,
+        "displayDepositAmount": "$1,008",
+        "percentageDiscount": 0E+2,
+        "discountAmount": 0,
+        "price": 1033.33,
+        "displayTotalPrice": "$3,100",
+        "unformattedTotalPrice": "3100.0"
+      },
+      "totalPriceWithTaxesAndFees": {
+        "amount": 3472.00,
+        "currency": "USD",
+        "negative": false,
+        "currencyCode": "USD",
+        "double": 3472.0
+      },
+      "currencyPosa": "USD",
+      "currencyPosu": "USD",
+      "quotedRate": 1033.33,
+      "resortFee": "$35.84",
+      "drrMessage": "",
+      "drrExpirationSecs": 1985071617,
+      "drrExpirationDate": "6/6/2079",
+      "tonightOnlyDRRSaveValue": "",
+      "valueAdd": {},
+      "loyaltyEarnPoints": "7,638",
+      "loyaltyEarnPrice": null,
+      "loyaltyBurnedPrice": null,
+      "totalLoyaltyBurnedPriceWithTaxesAndFees": null,
+      "loyaltyCrossOutPrice": null,
+      "totalLoyaltyCrossOutPriceWithTaxesAndFees": null,
+      "includedFees": {
+        "fees": [],
+        "displayTotal": null,
+        "totalAmount": 0,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "excludedFees": {
+        "fees": [
+          {
+            "name": "Resort fee",
+            "displayPrice": "$108",
+            "amount": 107.52,
+            "currency": "USD"
+          }
+        ],
+        "displayTotal": "$108",
+        "totalAmount": 107.52,
+        "usePOSuCurrency": false,
+        "showMandatoryFee": false
+      },
+      "amenities": {
+        "2194": "Breakfast for 2",
+        "2191": "Free High-Speed Internet"
+      },
+      "memberExclusiveDRRPresent": false,
+      "payLater": true,
+      "mrp": false,
+      "bookable": true,
+      "roomOccupants": "rm1=a2",
+      "nonRefundableInsideWindow": false,
+      "paymentChoiceAvailable": true,
+      "modHisMeatStickerEnabled": false,
+      "airAttach": false,
+      "tonightOnlyDRRPresent": false,
+      "hasValueAdd": false,
+      "freeCancellable": true,
+      "outsideWindowPrice": false,
+      "showETPDepositChoice": true,
+      "drrpresent": false,
+      "udp": true,
+      "mobileExclusive": false,
+      "refundable": true
+    }
+  ],
+  "fromStayDate": "2016-08-25",
+  "toStayDate": "2016-08-28",
+  "formattedFromStayDate": "Thu, Aug 25",
+  "formattedToStayDate": "Sun, Aug 28",
+  "travelerData": {
+    "chkin": "08/25/2016",
+    "chkout": "08/28/2016",
+    "adults": "2",
+    "children": "0",
+    "childAge": null,
+    "brandId": "2698",
+    "isVip": true,
+    "swpToggleOn": null,
+    "cacheId": null
+  },
+  "taapPackageRateEnabled": false,
+  "airAttachEnabled": false,
+  "loyaltyData": {
+    "rewardsAmount": 109449,
+    "expediaPlusBranded": "Expedia+",
+    "expediaPointsBranded": "Expedia+ points",
+    "awardType": "points",
+    "hasLoyaltyEarnings": true,
+    "swpToggleSessionStateIsOn": true,
+    "tier": "lty.tier.rewards.silver",
+    "displaySwpToggle": true
+  },
+  "displayQualifyingNights": true,
+  "hotelSoldOut": false
+}
