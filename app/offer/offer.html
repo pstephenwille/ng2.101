@@ -2,6 +2,7 @@
     <h1>Offer Component</h1>
     <p>{{details.title}}</p>
     <ul>
-        <li *ngFor="let offer of offers">{{offer.name}}</li>
+        <li *ngFor="let offer of offers.offers; let i=index">
+            {{offer.roomName}} - {{i}} - {{offer.checkInDate}}</li>
     </ul>
 </div>

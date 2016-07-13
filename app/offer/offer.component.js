@@ -10,14 +10,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var offer_service_1 = require("./offer.service/offer.service");
+var http_1 = require("@angular/http");
 var OfferComponent = (function () {
     function OfferComponent(_offerService) {
         this._offerService = _offerService;
+        this.offers = [];
         this.details = { title: 'Hotel offer', id: '100', name: 'Hilton' };
     }
-    OfferComponent.prototype.ngOnInit = function () { this.getOffers(); };
-    OfferComponent.prototype.getOffers = function (value) {
-        this.offers = this._offerService.getOffers(value);
+    OfferComponent.prototype.ngOnInit = function () {
+        this.getOffers();
+        console.log('.......init', this);
+    };
+    // getOffers(value?: string){
+    //     this.offers = this._offerService.getOffers(value)
+    // }
+    OfferComponent.prototype.getOffers = function () {
+        var _this = this;
+        this._offerService
+            .getOffers()
+            .subscribe(function (offers) { return _this.offers = offers; }, function (error) { return _this.error = error; });
+        // .then(offers => {
+        //     console.log('...get ', this);
+        //     this.offers = offers;
+        // })
+        // .catch(error => this.error = error);
     };
     OfferComponent = __decorate([
         core_1.Component({
@@ -27,7 +43,7 @@ var OfferComponent = (function () {
             directives: [],
             pipes: [],
             viewProviders: [],
-            providers: [offer_service_1.OfferService]
+            providers: [offer_service_1.OfferService, http_1.HTTP_PROVIDERS]
         }), 
         __metadata('design:paramtypes', [offer_service_1.OfferService])
     ], OfferComponent);
