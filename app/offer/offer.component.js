@@ -9,8 +9,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var common_1 = require('@angular/common');
 var offer_service_1 = require("./offer.service/offer.service");
 var http_1 = require("@angular/http");
+var iterable_pipe_1 = require('../pipes/iterable.pipe');
+var matchkey_pipe_1 = require('../pipes/matchkey.pipe');
+// enableProdMode();
 var OfferComponent = (function () {
     function OfferComponent(_offerService) {
         this._offerService = _offerService;
@@ -19,29 +23,28 @@ var OfferComponent = (function () {
     }
     OfferComponent.prototype.ngOnInit = function () {
         this.getOffers();
-        console.log('.......init', this);
     };
-    // getOffers(value?: string){
-    //     this.offers = this._offerService.getOffers(value)
-    // }
     OfferComponent.prototype.getOffers = function () {
         var _this = this;
         this._offerService
             .getOffers()
-            .subscribe(function (offers) { return _this.offers = offers; }, function (error) { return _this.error = error; });
-        // .then(offers => {
-        //     console.log('...get ', this);
-        //     this.offers = offers;
-        // })
-        // .catch(error => this.error = error);
+            .subscribe(function (offers) {
+            console.log('..component ', offers);
+            window['exp'] = offers.exp;
+            _this.offers = offers;
+        }, function (error) { return _this.error = error; });
     };
     OfferComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'offer',
-            templateUrl: 'app/offer/offer.html',
-            styleUrls: ['app/offer/offer.css'],
-            directives: [],
-            pipes: [],
+            // template: `<div [ngClass]="{'woot-woot': details.title, brown: details.id}" class="brown">
+            //              <div *ngIf="offers.exp | matchkey:['4334x','6447', '4334x']">exp</div>
+            //         </div>`,
+            templateUrl: 'offer.html',
+            styleUrls: ['offer.css'],
+            directives: [common_1.NgFor],
+            pipes: [iterable_pipe_1.IterablePipe, matchkey_pipe_1.MatchkeyPipe],
             viewProviders: [],
             providers: [offer_service_1.OfferService, http_1.HTTP_PROVIDERS]
         }), 

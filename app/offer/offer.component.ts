@@ -1,50 +1,52 @@
-import {Component} from '@angular/core';
+import {Component, enableProdMode} from '@angular/core';
+import {NgFor} from '@angular/common';
 import {OfferService} from "./offer.service/offer.service";
 import {HTTP_PROVIDERS} from "@angular/http";
+import {IterablePipe} from '../pipes/iterable.pipe';
+import {MatchkeyPipe} from '../pipes/matchkey.pipe';
+
+// enableProdMode();
 
 @Component({
-    selector:'offer',
-    templateUrl:'app/offer/offer.html',
-    styleUrls:['app/offer/offer.css'],
-    directives:[],
-    pipes:[],
-    viewProviders:[],
-    providers:[OfferService, HTTP_PROVIDERS]
+    moduleId: module.id,
+    selector: 'offer',
+    // template: `<div [ngClass]="{'woot-woot': details.title, brown: details.id}" class="brown">
+    //              <div *ngIf="offers.exp | matchkey:['4334x','6447', '4334x']">exp</div>
+    //         </div>`,
+    templateUrl:'offer.html',
+    styleUrls: ['offer.css'],
+    directives: [NgFor],
+    pipes: [IterablePipe, MatchkeyPipe],
+    viewProviders: [],
+    providers: [OfferService, HTTP_PROVIDERS]
 })
 
 export class OfferComponent {
-    // offers: Promise<Offer[]>;
-    errorMessage: string;
     offers = [];
-    error: any;
-    
-    constructor(private _offerService: OfferService){}
-    
-    ngOnInit(){
-        this.getOffers();
-        console.log('.......init', this);
-    }
-    // getOffers(value?: string){
-    //     this.offers = this._offerService.getOffers(value)
-    // }
+    error:any;
 
-    getOffers(){
+    constructor(private _offerService:OfferService) {
+    }
+
+    ngOnInit() {
+        this.getOffers();
+    }
+
+    getOffers() {
         this._offerService
             .getOffers()
             .subscribe(
-                offers => this.offers = offers,
+                offers => {
+                    console.log('..component ', offers);
+                    window['exp'] = offers.exp;
+                    this.offers = offers
+                },
                 error => this.error = <any>error
             );
-            // .then(offers => {
-            //     console.log('...get ', this);
-            //     this.offers = offers;
-            // })
-            // .catch(error => this.error = error);
     }
 
-    
-    details = {title:'Hotel offer', id:'100', name:'Hilton'}
-    
+    details = {title: 'Hotel offer', id: '100', name: 'Hilton'}
+
 }
 
 

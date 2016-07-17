@@ -1,70 +1,36 @@
-import {Injectable} from '@angular/core';
+import {Injectable} from "@angular/core";
 import {Http, Response} from "@angular/http";
-import {Observable} from 'rxjs/Rx';
+import {Observable} from "rxjs/Rx";
+import "rxjs/add/operator/map";
+import "rxjs/add/operator/toPromise";
+var transformOffers = require('./transformOfferData');
 
-// import {Http, HTTP_PROVIDERS} from '@angular/http';
-import 'rxjs/add/operator/map'
-import 'rxjs/add/operator/toPromise';
-
-export class Offer{
-    constructor(public fromStayDate: string){}
-}
+export class Offer{}
 
 @Injectable()
 export class OfferService{
     private _offersUrl = 'data/offers.json';
-
+    private _offers;
+    private _data;
+    public _adaptedOffers;
+    
     constructor(private _http: Http){}
-
-    // getOffers = () =>
-    //     [
-    //         {id:1, name:'offer one'},
-    //         {id:2, name:'offer two'},
-    //         {id:3, name:'offer three'}
-    //     ];
-
 
     getOffers(value?: string){
         return this._http.get(this._offersUrl)
-            .map((response: Response)=> <Offer[]>response.json())
-            .do(data => console.log(data))
-            .catch(this.handleError)
+            .map((response: Response)=> {
+                return this._offers = transformOffers.adaptOffers(<Offer[]>response.json(), new Date);
+                // return this._offers =<Offer[]>response.json();
+            })
+            .do(() => {
+                this._data =  transformOffers.adaptOffers(this._offers, new Date);
+                console.log('data fetched ', this._data)})
+            .catch(this._handleError)
     }
-/*
-*  *     http.get('people.json')
- *       // Call map on the response observable to get the parsed people object
- *       .map(res => res.json())
- *       // Subscribe to the observable to get the parsed people object and attach it to the
- *       // component
- *       .subscribe(people => this.people = people);
-*/
-
-    // getOffers(value?: string){
-    //     return this._http.get('/data/offers.json')
-    //         .map(res => res.json())
-    //         .subscribe(offer => <Offer[]>offer = offer)
-    // }
-        
-    // getOffers(){
-    //  this._http.get('/data/offers.json').subscribe((res:Response) => <Offer[]>res.json());
-    // }
 
 
-    // getOffers(){
-    //     return this._http.get(this._offersUrl)
-    //         .toPromise()
-    //         .then(response => {response.json()})
-    //         .catch(this.handleError);
-    // }
 
-    private handleError(error: Response){
-        // console.error(error);
+    private _handleError(error: Response){
         return Observable.throw(error.json().error ||'server error');
-        // return Promise.reject(error);
     }
-
-
-
-
-
 }

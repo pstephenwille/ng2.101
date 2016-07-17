@@ -8,15 +8,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
-var Rx_1 = require('rxjs/Rx');
-// import {Http, HTTP_PROVIDERS} from '@angular/http';
-require('rxjs/add/operator/map');
-require('rxjs/add/operator/toPromise');
+var Rx_1 = require("rxjs/Rx");
+require("rxjs/add/operator/map");
+require("rxjs/add/operator/toPromise");
+var transformOffers = require('./transformOfferData');
 var Offer = (function () {
-    function Offer(fromStayDate) {
-        this.fromStayDate = fromStayDate;
+    function Offer() {
     }
     return Offer;
 }());
@@ -26,44 +25,21 @@ var OfferService = (function () {
         this._http = _http;
         this._offersUrl = 'data/offers.json';
     }
-    // getOffers = () =>
-    //     [
-    //         {id:1, name:'offer one'},
-    //         {id:2, name:'offer two'},
-    //         {id:3, name:'offer three'}
-    //     ];
     OfferService.prototype.getOffers = function (value) {
+        var _this = this;
         return this._http.get(this._offersUrl)
-            .map(function (response) { return response.json(); })
-            .do(function (data) { return console.log(data); })
-            .catch(this.handleError);
+            .map(function (response) {
+            return _this._offers = transformOffers.adaptOffers(response.json(), new Date);
+            // return this._offers =<Offer[]>response.json();
+        })
+            .do(function () {
+            _this._data = transformOffers.adaptOffers(_this._offers, new Date);
+            console.log('data fetched ', _this._data);
+        })
+            .catch(this._handleError);
     };
-    /*
-    *  *     http.get('people.json')
-     *       // Call map on the response observable to get the parsed people object
-     *       .map(res => res.json())
-     *       // Subscribe to the observable to get the parsed people object and attach it to the
-     *       // component
-     *       .subscribe(people => this.people = people);
-    */
-    // getOffers(value?: string){
-    //     return this._http.get('/data/offers.json')
-    //         .map(res => res.json())
-    //         .subscribe(offer => <Offer[]>offer = offer)
-    // }
-    // getOffers(){
-    //  this._http.get('/data/offers.json').subscribe((res:Response) => <Offer[]>res.json());
-    // }
-    // getOffers(){
-    //     return this._http.get(this._offersUrl)
-    //         .toPromise()
-    //         .then(response => {response.json()})
-    //         .catch(this.handleError);
-    // }
-    OfferService.prototype.handleError = function (error) {
-        // console.error(error);
+    OfferService.prototype._handleError = function (error) {
         return Rx_1.Observable.throw(error.json().error || 'server error');
-        // return Promise.reject(error);
     };
     OfferService = __decorate([
         core_1.Injectable(), 
