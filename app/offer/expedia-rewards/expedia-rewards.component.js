@@ -9,27 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-/*
- * returns the value from the matched key
- * */
-var MatchkeyPipe = (function () {
-    function MatchkeyPipe() {
+var ExpediaRewardsComponent = (function () {
+    function ExpediaRewardsComponent() {
+        console.log('expedia-rewards component');
     }
-    MatchkeyPipe.prototype.transform = function (obj, keys) {
-        try {
-            if (obj && keys) {
-                return keys.find(function (key) { return obj[key]; });
-            }
-        }
-        catch (e) {
-            console.log('...matchkey error ', e);
-        }
-    };
-    MatchkeyPipe = __decorate([
-        core_1.Pipe({ name: 'matchkey' }), 
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], ExpediaRewardsComponent.prototype, "room", void 0);
+    ExpediaRewardsComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'expedia-rewards',
+            templateUrl: 'expedia-rewards.html',
+            styleUrls: [],
+            providers: []
+        }), 
         __metadata('design:paramtypes', [])
-    ], MatchkeyPipe);
-    return MatchkeyPipe;
+    ], ExpediaRewardsComponent);
+    return ExpediaRewardsComponent;
 }());
-exports.MatchkeyPipe = MatchkeyPipe;
-//# sourceMappingURL=matchkey.pipe.js.map
+exports.ExpediaRewardsComponent = ExpediaRewardsComponent;
+//# sourceMappingURL=expedia-rewards.component.js.map

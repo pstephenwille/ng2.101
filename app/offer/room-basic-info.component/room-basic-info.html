@@ -38,11 +38,11 @@
         </ul>
     </div>
 
-
-    <!--<span class="badge badge-notification room-with-view">Room with view</span> <span class="square-area">  325 square feet  </span>-->
-    <!--<div class="bed-types bold-bed-types">2 double beds-->
-    <!--</div>-->
-    <!--<div class="extra-bed-types"> (Extra beds available: Crib)</div>-->
-    <!--<p class="max-occupancy-text"><span class="max-guest-msg">  Room sleeps 4 guests  </span> <span class="child-msg">  (up to 3 children)  </span>-->
-    <!--</p>-->
+    <span *ngIf="room.hasRoomView" class="badge badge-notification room-with-view">Room with view</span>
+    <span class="square-area">{{room.roomSquareFeet}} square feet</span>
+    <div class="bed-types bold-bed-types">{{room.beddingOptions[0]}}</div>
+    <div class="extra-bed-types"> (Extra beds available: Crib)</div>
+    <p class="max-occupancy-text"><span class="max-guest-msg">  Room sleeps {{room.maxGuests}} guests  </span>
+        <span class="child-msg">  (up to {{room.maxChildren}} children)  </span>
+    </p>
 </div>

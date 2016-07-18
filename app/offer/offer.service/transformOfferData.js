@@ -23,8 +23,8 @@ define('transformOfferData', ['underscore'], function (_) {
                 };
                 /* Hierarchical rooms & rates */
                 /* won't work in modelData declaration */
-                modelData.displayExpediaRewardsColumn = roomsAndRatesData.displayExpediaRewardsColumn;
-                modelData.descripColspan = (roomsAndRatesData.displayExpediaRewardsColumn) ? 5 : 4;
+                modelData.displayExpediaRewardsColumn = response.rnrData.displayExpediaRewardsColumn;
+                modelData.descripColspan = (response.rnrData.displayExpediaRewardsColumn) ? 5 : 4;
                 //modelData.rooms = roomsAndRatesData.rooms;
 
                 _.each(response.offers || [], function (offer, index) {

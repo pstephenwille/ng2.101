@@ -11,7 +11,7 @@ export class MatchkeyPipe implements PipeTransform {
               return keys.find(key => obj[key])
             }
         } catch (e) {
-            console.log('...objectkey error ', e);
+            console.log('...matchkey error ', e);
         }
     }
 }

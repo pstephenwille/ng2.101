@@ -12,8 +12,8 @@ import {RoomBasicInfoComponent} from './room-basic-info.component/room-basic-inf
     moduleId: module.id,
     selector: 'offer',
     // template: `<div [ngClass]="{'woot-woot': details.title, brown: details.id}" class="brown">
-    //              <div *ngIf="offers.exp | matchkey:['4334x','6447', '4334x']">exp</div>
-    //         </div>`,
+    //               <div *ngIf="offers.exp | matchkey:['4334x','6447', '4334x']">exp</div>
+    //          </div>`,
     templateUrl:'offer.html',
     styleUrls: ['offer.css'],
     directives: [NgFor, RoomThumbnailComponent, RoomBasicInfoComponent],

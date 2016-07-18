@@ -32,27 +32,28 @@
                    class="room room-above-fold"
                    [ngClass]="{'first-room-featured': room.showBestValue, 'single-offer-room': room.isSingleOfferRoom}">
             <tr *ngIf="room.name" class="rooms-and-rates-margin">
-                <td [attr.colspan]="offers.descripColspan"></td>
+                <td [attr.colspan]="offers.descripColspan">
+                    <hr/>
+                    margin {{offers.descripColspan}}
+                </td>
             </tr>
-            <tr *ngFor="let offer of room.offers; let i = index"
-                class="rate-plan"
-                [ngClass]="{'rate-plan-first': offer.isFeaturedOffer}">
-
+            <tr class="rate-plan"
+                [ngClass]="{'rate-plan-first': room.offers[0].isFeaturedOffer}">
 
                 <td [attr.rowspan]="room.offerCount" class="room-info">
-                    DUMMY DATA - {{room.offerCount}}
-
-                    <room-thumbnail [photos]="room.photos" [room]="room"></room-thumbnail>
+                    DUMMY DATA - {{room.offers[0].isFeaturedOffer}}
+                    <hr/>
+                    <!--<room-thumbnail [photos]="room.photos" [room]="room"></room-thumbnail>-->
                     <room-basic-info [room]="room"></room-basic-info>
-
-
 
                     <!-- CLOSING TD FOR DEV -->
                 </td>
             </tr>
             <!-- td: rate-features -->
+
             <!-- td: expedia-rewards -->
             <!-- td: avg-rate -->
+            <!-- td: book-button-column -->
             <!-- td: book-button-column -->
 
 
