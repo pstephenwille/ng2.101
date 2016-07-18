@@ -14,6 +14,8 @@ var offer_service_1 = require("./offer.service/offer.service");
 var http_1 = require("@angular/http");
 var iterable_pipe_1 = require('../pipes/iterable.pipe');
 var matchkey_pipe_1 = require('../pipes/matchkey.pipe');
+var room_thumbnail_component_1 = require('./room-thumbnail.component/room-thumbnail.component');
+var room_basic_info_component_1 = require('./room-basic-info.component/room-basic-info.component');
 // enableProdMode();
 var OfferComponent = (function () {
     function OfferComponent(_offerService) {
@@ -30,7 +32,6 @@ var OfferComponent = (function () {
             .getOffers()
             .subscribe(function (offers) {
             console.log('..component ', offers);
-            window['exp'] = offers.exp;
             _this.offers = offers;
         }, function (error) { return _this.error = error; });
     };
@@ -43,7 +44,7 @@ var OfferComponent = (function () {
             //         </div>`,
             templateUrl: 'offer.html',
             styleUrls: ['offer.css'],
-            directives: [common_1.NgFor],
+            directives: [common_1.NgFor, room_thumbnail_component_1.RoomThumbnailComponent, room_basic_info_component_1.RoomBasicInfoComponent],
             pipes: [iterable_pipe_1.IterablePipe, matchkey_pipe_1.MatchkeyPipe],
             viewProviders: [],
             providers: [offer_service_1.OfferService, http_1.HTTP_PROVIDERS]

@@ -1,0 +1,48 @@
+<!--<div> my room - {{room.description}}</div>-->
+<div class="room-basic-info">
+    <div *ngIf="room.showBestValue" class="best-value">
+        <span class="icon icon-shop" aria-hidden="true"></span>
+        &nbsp;Best Value!
+    </div>
+
+    <div *ngIf="room.description" class="menu-bar room-description-menu-bar exp9784-5">
+        <ul class="menu-bar-inner">
+            <li>
+                <button type="button"
+                        data-control="menu"
+                        data-auto-pos="true"
+                        class="trigger-link menu-trigger btn-text theme-standard pin-left menu-arrow"
+                        aria-expanded="false"
+                        data-track="HOT.HIS.RoomsAndRates.ShowRoomInformation">
+                    <span class="btn-label">
+                        <span class="icon icon-info"
+                              aria-hidden="true"></span>&nbsp;
+                        <span class="icon icon-info"
+                              aria-hidden="true"></span>
+                        {{room.name}}</span>
+                </button>
+                <div class="menu room-description-menu" aria-hidden="true">
+                    <div class="menu-main">
+                        <div class="paragraph-hack" [innerHTML]="room.description"></div>
+                    </div>
+                    <footer class="menu-footer">
+                        <div class="menu-close">
+                            <button type="button" class="close btn-text">
+                                <span class="btn btn-label">Close
+                                    <span class="icon icon-close"
+                                          aria-hidden="true"></span></span></button>
+                        </div>
+                    </footer>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <!--<span class="badge badge-notification room-with-view">Room with view</span> <span class="square-area">  325 square feet  </span>-->
+    <!--<div class="bed-types bold-bed-types">2 double beds-->
+    <!--</div>-->
+    <!--<div class="extra-bed-types"> (Extra beds available: Crib)</div>-->
+    <!--<p class="max-occupancy-text"><span class="max-guest-msg">  Room sleeps 4 guests  </span> <span class="child-msg">  (up to 3 children)  </span>-->
+    <!--</p>-->
+</div>

@@ -33,515 +33,85 @@
                    [ngClass]="{'first-room-featured': room.showBestValue, 'single-offer-room': room.isSingleOfferRoom}">
             <tr *ngIf="room.name" class="rooms-and-rates-margin">
                 <td [attr.colspan]="offers.descripColspan"></td>
-
+            </tr>
             <tr *ngFor="let offer of room.offers; let i = index"
                 class="rate-plan"
                 [ngClass]="{'rate-plan-first': offer.isFeaturedOffer}">
+
+
                 <td [attr.rowspan]="room.offerCount" class="room-info">
-                    DUMMY DATA - {{room.name}}
+                    DUMMY DATA - {{room.offerCount}}
 
-                    <!-- PHOTOS / thumbnails ---------------------------------------------------------------------------------->
-                    <!--{{> room-thumbnails-template ../../photos}}-->
-                    <div *ngFor="let img of room.photos" class="room-thumbnail">
-                        <a role="button"
-                           aria-label="Launch room pictures overlay"
-                           class="clickable-thumbnail"
-                           href="javascript:void(0)"
-                           data-track="HOT.HIS.RoomsAndRates.RoomHeroImage">
-                            <!--{{#if img.caption}}-->
-                            <!--<@uitk.figure src="path/to/image.jpg" alt="alt text" caption="fig caption text"-->
-                            <!--aspectRatio="1-1" />-->
-                            ​
-                            <figure class="image aspect-ratio16-9 loading"
-                                    data-media-type="image"
-                                    data-lazy="true"
-                                    [attr.data-src]="img.thumbNail"
-                                    [attr.data-alt]="img.caption"
-                                    data-aspect-ratio="16-9"
-                                    data-class="tile-media">
-                                <noscript><img alt="img.caption" class="tile-media"/></noscript>
-                                <span class="media-loader"><span class="loader loader-primary loader-light loader-static loading"
-                                                                 aria-hidden="true"
-                                                                 title="Loading..."></span></span></figure>
-                         <!--<@uitk.figure classes="large-thumbnail squared-thumbnail" src="{{thumbnailUrl}}" alt="{{caption}}"-->
-                            <!--lazy="true" aspectRatio="1-1"/>-->
-                            <!--<@uitk.figure classes="large-thumbnail rec-thumbnail" src="{{largeUrl}}" alt="{{caption}}"-->
-                            <!--lazy="true" aspectRatio="16-9"/>-->
-                            <!--{{else}}-->
-                            <!--{{#if name}}-->
-                            <!--<#assign altTextRoomName><@loc.msg id="altTextRoomName" /></#assign>-->
-                            <!--<@uitk.figure classes="large-thumbnail squared-thumbnail" src="{{thumbnailUrl}}"-->
-                            <!--alt="${altTextRoomName}" lazy="true" aspectRatio="1-1"/>-->
-                            <!--<@uitk.figure classes="large-thumbnail rec-thumbnail" src="{{largeUrl}}" alt="${altTextRoomName}"-->
-                            <!--lazy="true" aspectRatio="16-9"/>-->
-                            <!--{{else}}-->
-                            <!--<#assign altText><@loc.msg id="altText" /></#assign>-->
-                            <!--<@uitk.figure classes="large-thumbnail squared-thumbnail" src="{{thumbnailUrl}}" alt="${altText}"-->
-                            <!--lazy="true" aspectRatio="1-1"/>-->
-                            <!--<@uitk.figure classes="large-thumbnail rec-thumbnail" src="{{largeUrl}}" alt="${altText}"-->
-                            <!--lazy="true" aspectRatio="16-9"/>-->
-                            <!--{{/if}}-->
-                            <!--{{/if}}-->
-                            <img src="/static/default/default/images/infosite/larger-image-icon.png"
-                                 class="larger-image-icon"
-                                 alt=""/>
-                        </a>
-                    </div>
+                    <room-thumbnail [photos]="room.photos" [room]="room"></room-thumbnail>
+                    <room-basic-info [room]="room"></room-basic-info>
 
-              <!-- CLOSING TD FOR DEV -->
+
+
+                    <!-- CLOSING TD FOR DEV -->
                 </td>
             </tr>
-                    <!-- ROOMS --------------------------------------------------------------------------------------------------->
-                    <!--{{> room-basic-information-template ../..}}-->
-                    <!--<@template id="room-basic-information-template">-->
-                    <!--<div class="room-basic-info">-->
-                    <!--<div *ngIf="room.showBestValue" class="best-value">-->
-                    <!--<span class="icon icon-shop" aria-hidden="true"></span>&nbsp;Best Value!</div>-->
-                    <!-- Begin 9925: HCore_MultiSourceTest -->
-                    <!-- assign multiSourceLimitedDetails>We found this additional room option on &lt;strong&gt;Jumbo Tours&lt;/strong&gt;. Limited room details available.</#assign>
-                    <!-- assign bookSecurely>Securely book now on &lt;strong&gt;${brandName}&lt;/strong&gt;.</#assign>
-                        <!-- Room Name -->
-                    <!-- Room Description (Menu) -->
-                    <!-- Begin 9784: GROHISRoomsAndRatesInfoModule -->
-                    <!--{{#exp 9784 0}}-->
-                    <!--&lt;!&ndash; End 9784: GROHISRoomsAndRatesInfoModule &ndash;&gt;-->
-                    <!--{{#if description}}-->
-                    <!--<@uitk.menuBar classes="room-description-menu-bar">-->
-                    <!--<@uitk.menu triggerTitle="{{name}}" position="left" arrow="true"-->
-                    <!--close="true" classes="room-description-menu"-->
-                    <!--dataAttributes="track:HOT.HIS.RoomsAndRates.ShowRoomInformation">-->
-                    <!--<@uitk.menuContent>-->
-                    <!--{{#each description}}-->
-                    <!--<div class="paragraph-hack">{{{this}}}</div>-->
-                    <!--{{/each}}-->
-                    <!--&lt;!&ndash; Begin 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{#if this.offers.[0].multiSource}}-->
-                    <!--<div class="paragraph-hack"><br/>${multiSourceLimitedDetails}</div>-->
-                    <!--<div class="paragraph-hack"><br/>${bookSecurely}</div>-->
-                    <!--{{/if}}-->
-                    <!--&lt;!&ndash; End 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--</-->
-                    <!--@uitk.menuContent>-->
-                    <!--</-->
-                    <!--@uitk.menu>-->
-                    <!--</-->
-                    <!--@uitk.menuBar>-->
-                    <!--{{else}}-->
-                    <!--&lt;!&ndash; Begin 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{#if this.offers.[0].multiSource}}-->
-                    <!--<@uitk.menuBar classes="room-description-menu-bar">-->
-                    <!--<@uitk.menu triggerTitle="{{name}}" position="left" arrow="true"-->
-                    <!--close="true" classes="room-description-menu">-->
-                    <!--<@uitk.menuContent>-->
-                    <!--<div class="paragraph-hack">${multiSourceLimitedDetails}</div>-->
-                    <!--<div class="paragraph-hack"><br/>${bookSecurely}</div>-->
-                    <!--</-->
-                    <!--@uitk.menuContent>-->
-                    <!--</-->
-                    <!--@uitk.menu>-->
-                    <!--</-->
-                    <!--@uitk.menuBar>-->
-                    <!--{{else}}-->
+            <!-- td: rate-features -->
+            <!-- td: expedia-rewards -->
+            <!-- td: avg-rate -->
+            <!-- td: book-button-column -->
 
 
-                    <!-- End 9925: HCore_MultiSourceTest -->
-                    <!--<h3 class="room-name">{{name}}</h3>-->
-                    <!--<#&#45;&#45; Begin 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{/if}}-->
-                    <!--<#&#45;&#45; End 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{/if}}-->
-                    <!--<#&#45;&#45; Begin 9784: GROHISRoomsAndRatesInfoModule &ndash;&gt;-->
-                    <!--{{else}}-->
-                    <!--{{#exp 9784 5}}-->
-                    <!--{{#if description}}-->
-                    <!--<#assign roomsAndRatesInfoIcon>-->
-                    <!--<span class="icon icon-info" aria-hidden="true"></span>-->
-                    <!--</#assign>-->
-                    <!--<@uitk.menuBar classes="exp9784-5 room-description-menu-bar">-->
-                    <!--<@uitk.menu triggerTitle="${roomsAndRatesInfoIcon}{{name}}"-->
-                    <!--position="left" arrow="true" close="true"-->
-                    <!--classes="room-description-menu"-->
-                    <!--dataAttributes="track:HOT.HIS.RoomsAndRates.ShowRoomInformation">-->
-                    <!--<@uitk.menuContent>-->
-                    <!--{{#each description}}-->
-                    <!--<div class="paragraph-hack">{{{this}}}</div>-->
-                    <!--{{/each}}-->
-                    <!--<#&#45;&#45; Begin 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{#if this.offers.[0].multiSource}}-->
-                    <!--<div class="paragraph-hack"><br/>${multiSourceLimitedDetails}</div>-->
-                    <!--<div class="paragraph-hack"><br/>${bookSecurely}</div>-->
-                    <!--{{/if}}-->
-                    <!--<#&#45;&#45; End 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--</-->
-                    <!--@uitk.menuContent>-->
-                    <!--</-->
-                    <!--@uitk.menu>-->
-                    <!--</-->
-                    <!--@uitk.menuBar>-->
-                    <!--{{else}}-->
-                    <!--<#&#45;&#45; Begin 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{#if this.offers.[0].multiSource}}-->
-                    <!--<@uitk.menuBar classes="room-description-menu-bar">-->
-                    <!--<@uitk.menu triggerTitle="{{name}}" position="left" arrow="true"-->
-                    <!--close="true" classes="room-description-menu">-->
-                    <!--<@uitk.menuContent>-->
-                    <!--<div class="paragraph-hack">${multiSourceLimitedDetails}</div>-->
-                    <!--<div class="paragraph-hack"><br/>${bookSecurely}</div>-->
-                    <!--</-->
-                    <!--@uitk.menuContent>-->
-                    <!--</-->
-                    <!--@uitk.menu>-->
-                    <!--</-->
-                    <!--@uitk.menuBar>-->
-                    <!--{{else}}-->
-                    <!--<#&#45;&#45; End 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--<h3 class="exp9784-5 room-name">{{name}}</h3>-->
-                    <!--<#&#45;&#45; Begin 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{/if}}-->
-                    <!--<#&#45;&#45; End 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{/if}}-->
-                    <!--{{else}}-->
-                    <!--{{#exp 9784 1}}<h3 class="exp9784-1 room-name">{{name}}</h3>{{/exp}}-->
-                    <!--{{#exp 9784 2}}<h3 class="exp9784-2 room-name">{{name}}</h3>{{/exp}}-->
-                    <!--{{#exp 9784 3}}<h3 class="exp9784-3 room-name">{{name}}</h3>{{/exp}}-->
-                    <!--{{#exp 9784 4}}<h3 class="exp9784-4 room-name">{{name}}</h3>{{/exp}}-->
-                    <!--{{/exp}}-->
-                    <!--{{/exp}}-->
-                    <!--<#&#45;&#45; End 9784: GROHISRoomsAndRatesInfoModule &ndash;&gt;-->
-                    <!--&lt;!&ndash;&ndash;&gt;-->
-                    <!--{{#if hasRoomView}}-->
-                    <!--<@uitk.badge classes="room-with-view"><@loc.msg id="roomWithView"/>-->
-                    <!--</-->
-                    <!--@uitk.badge>-->
-                    <!--{{/if}}-->
-                    <!--&lt;!&ndash;&ndash;&gt;-->
-                    <!--<#&#45;&#45; Room Area &ndash;&gt;-->
-                    <!--<span class="square-area">-->
-                    <!--<#assign isShowAreaInSqFt = hotelConfig.isShowAreaInSqFt()>-->
-                    <!--<#assign unknownArea><@loc.msg id="unknownArea"/></#assign>-->
-                    <!--<#if isShowAreaInSqFt>-->
-                    <!--{{#if roomSquareFeet}}-->
-                    <!--<@loc.msg id="squareFeet"/>-->
-                    <!--{{/if}}-->
-                    <!--<#else>-->
-                    <!--{{#if roomSquareMeters}}-->
-                    <!--<@loc.msg id="squareMeters"/>-->
-                    <!--{{/if}}-->
-                    <!--</#if>-->
-                    <!--</span>-->
-                    <!--&lt;!&ndash;&ndash;&gt;-->
-                    <!--<#&#45;&#45; Bed Types &ndash;&gt;-->
-                    <!--{{#if beddingOptions}}-->
-                    <!--<div class="bed-types {{#if extraBeddingOptions}}bold-bed-types{{/if}}">-->
-                    <!--{{beddingOptions}}-->
-                    <!--</div>-->
-                    <!--{{#if extraBeddingOptions}}-->
-                    <!--<div class="extra-bed-types">-->
-                    <!--(<@loc.msg id="extraBedding_ExtraBeds"/>-->
-                    <!--{{#if cribBeddingAndRollawayBedding}}-->
-                    <!--<@loc.msg id="extraBedding_Crib"/>, <@loc.msg-->
-                    <!--id="extraBedding_RollawayBed"/>)-->
-                    <!--{{else}}-->
-                    <!--{{#if cribBedding}}-->
-                    <!--<@loc.msg id="extraBedding_Crib"/>)-->
-                    <!--{{else}}-->
-                    <!--{{#if rollawayBedding}}-->
-                    <!--<@loc.msg id="extraBedding_RollawayBed"/>)-->
-                    <!--{{/if}}-->
-                    <!--{{/if}}-->
-                    <!--{{/if}}-->
-                    <!--</div>-->
-                    <!--{{/if}}-->
-                    <!--{{/if}}-->
-                    <!--&lt;!&ndash;&ndash;&gt;-->
-                    <!--<#&#45;&#45; Max occupancy &ndash;&gt;-->
-                    <!--{{#if maxOccupancyValid}}-->
-                    <!--<#assign isShowAreaInSqFt = hotelConfig.isShowAreaInSqFt()>-->
-                    <!--<p class="max-occupancy-text">-->
-                    <!--<span class="max-guest-msg">-->
-                    <!--{{#if isMaxGuestsSingular}}-->
-                    <!--<@loc.msg id="maxGuests_Singular"/>-->
-                    <!--{{else}}-->
-                    <!--<@loc.msg id="maxGuests_Plural"/>-->
-                    <!--{{/if}}-->
-                    <!--</span>-->
-                    <!--{{#if maxChildren}}-->
-                    <!--<span class="child-msg">-->
-                    <!--{{#if isMaxChildrenSingular}}-->
-                    <!--<@loc.msg id="maxChildren_Singular"/>-->
-                    <!--{{else}}-->
-                    <!--<@loc.msg id="maxChildren_Plural"/>-->
-                    <!--{{/if}}-->
-                    <!--</span>-->
-                    <!--{{/if}}-->
-                    <!--</p>-->
-                    <!--{{/if}}-->
-                    <!--&lt;!&ndash;&ndash;&gt;-->
-                    <!--<#&#45;&#45; Begin 9784: GROHISRoomsAndRatesInfoModule &ndash;&gt;-->
-                    <!--{{#exp 9784 1}}-->
-                    <!--{{#if description}}-->
-                    <!--<#assign roomsAndRatesInfoTitle>-->
-                    <!--<@loc.msg id="moreDetails"/>-->
-                    <!--</#assign>-->
-                    <!--&lt;!&ndash;&ndash;&gt;-->
-                    <!--<@uitk.menuBar classes="exp9784-1-->
-                    <!--room-description-menu-bar">-->
-                    <!--<@uitk.menu triggerTitle="${roomsAndRatesInfoTitle}"-->
-                    <!--position="left" arrow="true" close="true"-->
-                    <!--classes="room-description-menu"-->
-                    <!--dataAttributes="track:HOT.HIS.RoomsAndRates.ShowRoomInformation">-->
-                    <!--<@uitk.menuContent>-->
-                    <!--{{#each description}}-->
-                    <!--<div class="paragraph-hack">{{{this}}}</div>-->
-                    <!--{{/each}}-->
-                    <!--<#&#45;&#45; Begin 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{#if this.offers.[0].multiSource}}-->
-                    <!--<div class="paragraph-hack"><br/>${multiSourceLimitedDetails}-->
-                    <!--</div>-->
-                    <!--<div class="paragraph-hack"><br/>${bookSecurely}-->
-                    <!--</div>-->
-                    <!--{{/if}}-->
-                    <!--<#&#45;&#45; End 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--</-->
-                    <!--@uitk.menuContent>-->
-                    <!--</-->
-                    <!--@uitk.menu>-->
-                    <!--</-->
-                    <!--@uitk.menuBar>-->
-                    <!--{{else}}-->
-                    <!--<#&#45;&#45; Begin 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{#if this.offers.[0].multiSource}}-->
-                    <!--<@uitk.menuBar classes="room-description-menu-bar">-->
-                    <!--<@uitk.menu triggerTitle="{{name}}" position="left"-->
-                    <!--arrow="true" close="true"-->
-                    <!--classes="room-description-menu">-->
-                    <!--<@uitk.menuContent>-->
-                    <!--<div class="paragraph-hack">-->
-                    <!--${multiSourceLimitedDetails}-->
-                    <!--</div>-->
-                    <!--<div class="paragraph-hack"><br/>${bookSecurely}-->
-                    <!--</div>-->
-                    <!--</-->
-                    <!--@uitk.menuContent>-->
-                    <!--</-->
-                    <!--@uitk.menu>-->
-                    <!--</-->
-                    <!--@uitk.menuBar>-->
-                    <!--{{/if}}-->
-                    <!--<#&#45;&#45; End 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{/if}}-->
-                    <!--{{/exp}}-->
-                    <!--{{#exp 9784 2}}-->
-                    <!--{{#if description}}-->
-                    <!--<#assign roomsAndRatesInfoTitle>-->
-                    <!--<@loc.msg id="showMore"/>-->
-                    <!--</#assign>-->
-                    <!--&lt;!&ndash;&ndash;&gt;-->
-                    <!--<@uitk.menuBar classes="exp9784-2-->
-                    <!--room-description-menu-bar">-->
-                    <!--<@uitk.menu triggerTitle="${roomsAndRatesInfoTitle}"-->
-                    <!--position="left" arrow="true" close="true"-->
-                    <!--classes="room-description-menu"-->
-                    <!--dataAttributes="track:HOT.HIS.RoomsAndRates.ShowRoomInformation">-->
-                    <!--<@uitk.menuContent>-->
-                    <!--{{#each description}}-->
-                    <!--<div class="paragraph-hack">{{{this}}}</div>-->
-                    <!--{{/each}}-->
-                    <!--<#&#45;&#45; Begin 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{#if this.offers.[0].multiSource}}-->
-                    <!--<div class="paragraph-hack"><br/>${multiSourceLimitedDetails}-->
-                    <!--</div>-->
-                    <!--<div class="paragraph-hack"><br/>${bookSecurely}</div>-->
-                    <!--{{/if}}-->
-                    <!--<#&#45;&#45; End 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--</-->
-                    <!--@uitk.menuContent>-->
-                    <!--</-->
-                    <!--@uitk.menu>-->
-                    <!--</-->
-                    <!--@uitk.menuBar>-->
-                    <!--{{else}}-->
-                    <!--<#&#45;&#45; Begin 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{#if this.offers.[0].multiSource}}-->
-                    <!--<@uitk.menuBar classes="room-description-menu-bar">-->
-                    <!--<@uitk.menu triggerTitle="{{name}}" position="left"-->
-                    <!--arrow="true" close="true" classes="room-description-menu">-->
-                    <!--<@uitk.menuContent>-->
-                    <!--<div class="paragraph-hack">${multiSourceLimitedDetails}-->
-                    <!--</div>-->
-                    <!--<div class="paragraph-hack"><br/>${bookSecurely}</div>-->
-                    <!--</-->
-                    <!--@uitk.menuContent>-->
-                    <!--</-->
-                    <!--@uitk.menu>-->
-                    <!--</-->
-                    <!--@uitk.menuBar>-->
-                    <!--{{/if}}-->
-                    <!--<#&#45;&#45; End 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{/if}}-->
-                    <!--{{/exp}}-->
-                    <!--{{#exp 9784 3}}-->
-                    <!--{{#if description}}-->
-                    <!--<#assign roomsAndRatesInfoTitle>-->
-                    <!--<span class="icon icon-info" aria-hidden="true"></span>&nbsp;<@loc.msg-->
-                    <!--id="moreDetails"/>-->
-                    <!--</#assign>-->
-                    <!--&lt;!&ndash;&ndash;&gt;-->
-                    <!--<@uitk.menuBar classes="exp9784-3 room-description-menu-bar">-->
-                    <!--<@uitk.menu triggerTitle="${roomsAndRatesInfoTitle}" position="left"-->
-                    <!--arrow="true" close="true" classes="room-description-menu"-->
-                    <!--dataAttributes="track:HOT.HIS.RoomsAndRates.ShowRoomInformation">-->
-                    <!--<@uitk.menuContent>-->
-                    <!--{{#each description}}-->
-                    <!--<div class="paragraph-hack">{{{this}}}</div>-->
-                    <!--{{/each}}-->
-                    <!--<#&#45;&#45; Begin 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{#if this.offers.[0].multiSource}}-->
-                    <!--<div class="paragraph-hack"><br/>${multiSourceLimitedDetails}-->
-                    <!--</div>-->
-                    <!--<div class="paragraph-hack"><br/>${bookSecurely}</div>-->
-                    <!--{{/if}}-->
-                    <!--<#&#45;&#45; End 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--</-->
-                    <!--@uitk.menuContent>-->
-                    <!--</-->
-                    <!--@uitk.menu>-->
-                    <!--</-->
-                    <!--@uitk.menuBar>-->
-                    <!--{{else}}-->
-                    <!--<#&#45;&#45; Begin 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{#if this.offers.[0].multiSource}}-->
-                    <!--<@uitk.menuBar classes="room-description-menu-bar">-->
-                    <!--<@uitk.menu triggerTitle="{{name}}" position="left" arrow="true"-->
-                    <!--close="true" classes="room-description-menu">-->
-                    <!--<@uitk.menuContent>-->
-                    <!--<div class="paragraph-hack">${multiSourceLimitedDetails}</div>-->
-                    <!--<div class="paragraph-hack"><br/>${bookSecurely}</div>-->
-                    <!--</-->
-                    <!--@uitk.menuContent>-->
-                    <!--</-->
-                    <!--@uitk.menu>-->
-                    <!--</-->
-                    <!--@uitk.menuBar>-->
-                    <!--{{/if}}-->
-                    <!--<#&#45;&#45; End 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{/if}}-->
-                    <!--{{/exp}}-->
-                    <!--{{#exp 9784 4}}-->
-                    <!--{{#if description}}-->
-                    <!--<#assign roomsAndRatesInfoTitle>-->
-                    <!--<span class="icon icon-info" aria-hidden="true"></span>&nbsp;<@loc.msg-->
-                    <!--id="showMore"/>-->
-                    <!--</#assign>-->
-                    <!--&lt;!&ndash;&ndash;&gt;-->
-                    <!--<@uitk.menuBar classes="exp9784-4 room-description-menu-bar">-->
-                    <!--<@uitk.menu triggerTitle="${roomsAndRatesInfoTitle}" position="left"-->
-                    <!--arrow="true" close="true" classes="room-description-menu"-->
-                    <!--dataAttributes="track:HOT.HIS.RoomsAndRates.ShowRoomInformation">-->
-                    <!--<@uitk.menuContent>-->
-                    <!--{{#each description}}-->
-                    <!--<div class="paragraph-hack">{{{this}}}</div>-->
-                    <!--{{/each}}-->
-                    <!--<#&#45;&#45; Begin 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{#if this.offers.[0].multiSource}}-->
-                    <!--<div class="paragraph-hack"><br/>${multiSourceLimitedDetails}</div>-->
-                    <!--<div class="paragraph-hack"><br/>${bookSecurely}</div>-->
-                    <!--{{/if}}-->
-                    <!--<#&#45;&#45; End 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--</-->
-                    <!--@uitk.menuContent>-->
-                    <!--</-->
-                    <!--@uitk.menu>-->
-                    <!--</-->
-                    <!--@uitk.menuBar>-->
-                    <!--{{else}}-->
-                    <!--<#&#45;&#45; Begin 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{#if this.offers.[0].multiSource}}-->
-                    <!--<@uitk.menuBar classes="room-description-menu-bar">-->
-                    <!--<@uitk.menu triggerTitle="{{name}}" position="left" arrow="true"-->
-                    <!--close="true" classes="room-description-menu">-->
-                    <!--<@uitk.menuContent>-->
-                    <!--<div class="paragraph-hack">${multiSourceLimitedDetails}</div>-->
-                    <!--<div class="paragraph-hack"><br/>${bookSecurely}</div>-->
-                    <!--</-->
-                    <!--@uitk.menuContent>-->
-                    <!--</-->
-                    <!--@uitk.menu>-->
-                    <!--</-->
-                    <!--@uitk.menuBar>-->
-                    <!--{{/if}}-->
-                    <!--<#&#45;&#45; End 9925: HCore_MultiSourceTest &ndash;&gt;-->
-                    <!--{{/if}}-->
-                    <!--{{/exp}}-->
-                    <!--<#&#45;&#45; End 9784: GROHISRoomsAndRatesInfoModule &ndash;&gt;-->
-                    <!--&lt;!&ndash;&ndash;&gt;-->
-                    <!--<#&#45;&#45; Begin 10398: HIS_GuestReviews_LinkRoomLevelReviews_Test &ndash;&gt;-->
-                    <!--{{#exp 10398 1 2}}-->
-                    <!--<a href="#section-reviews"-->
-                    <!--class="room-level-reviews"-->
-                    <!--data-id="{{roomTypeCode}}"></a>-->
-                    <!--{{/exp}}-->
-                    <!--<#&#45;&#45; End 10398: HIS_GuestReviews_LinkRoomLevelReviews_Test &ndash;&gt;-->
-                    <!--</div>-->
-                    <!--</@template> END ROOMS ----------------------------------------------------------------------------------------->
+            <!--</td>-->
+            <!--{{/unless}}-->
 
+            <!--<td class="rate-features">-->
+            <!--{{#if mrp}}-->
+            <!--{{> mrp-deal-template this}}-->
+            <!--{{else}}-->
+            <!--{{> rate-features-template this}}-->
+            <!--{{/if}}-->
+            <!--</td>-->
 
-                    <!--</td>-->
-                    <!--{{/unless}}-->
+            <!--<#&#45;&#45; Rewards Member Coupon (Expedia.com loyalty) &ndash;&gt;-->
+            <!--{{#if ../../displayExpediaRewardsColumn}}-->
+            <!--<td class="expedia-rewards">-->
+            <!--{{> rewards-member-coupon-template this}}-->
+            <!--</td>-->
+            <!--{{/if}}-->
+            <!--<td class="avg-rate">-->
+            <!--{{#if bookable}}-->
+            <!--<#&#45;&#45; Room pricing &ndash;&gt;-->
+            <!--{{> room-pricing-template this}}-->
 
-                    <!--<td class="rate-features">-->
-                    <!--{{#if mrp}}-->
-                    <!--{{> mrp-deal-template this}}-->
-                    <!--{{else}}-->
-                    <!--{{> rate-features-template this}}-->
-                    <!--{{/if}}-->
-                    <!--</td>-->
+            <!--<#&#45;&#45; Room deal message &ndash;&gt;-->
+            <!--{{> room-deal-message-template this}}-->
 
-                    <!--<#&#45;&#45; Rewards Member Coupon (Expedia.com loyalty) &ndash;&gt;-->
-                    <!--{{#if ../../displayExpediaRewardsColumn}}-->
-                    <!--<td class="expedia-rewards">-->
-                    <!--{{> rewards-member-coupon-template this}}-->
-                    <!--</td>-->
-                    <!--{{/if}}-->
-                    <!--<td class="avg-rate">-->
-                    <!--{{#if bookable}}-->
-                    <!--<#&#45;&#45; Room pricing &ndash;&gt;-->
-                    <!--{{> room-pricing-template this}}-->
+            <!--<#&#45;&#45; TAAP WRAPPER START: Display show commission link if it is a taap user&ndash;&gt;-->
+            <!--{{#if displayTaapContent}}-->
+            <!--{{> taap-commission-tooltip-template this}}-->
+            <!--{{/if}}-->
+            <!--<#&#45;&#45; TAAP WRAPPER END&ndash;&gt;-->
 
-                    <!--<#&#45;&#45; Room deal message &ndash;&gt;-->
-                    <!--{{> room-deal-message-template this}}-->
+            <!--{{else}}-->
+            <!--<#&#45;&#45; Room unavailable message &ndash;&gt;-->
+            <!--{{> room-unavailable-message-template this}}-->
+            <!--{{/if}}-->
+            <!--</td>-->
 
-                    <!--<#&#45;&#45; TAAP WRAPPER START: Display show commission link if it is a taap user&ndash;&gt;-->
-                    <!--{{#if displayTaapContent}}-->
-                    <!--{{> taap-commission-tooltip-template this}}-->
-                    <!--{{/if}}-->
-                    <!--<#&#45;&#45; TAAP WRAPPER END&ndash;&gt;-->
-
-                    <!--{{else}}-->
-                    <!--<#&#45;&#45; Room unavailable message &ndash;&gt;-->
-                    <!--{{> room-unavailable-message-template this}}-->
-                    <!--{{/if}}-->
-                    <!--</td>-->
-
-                    <!--<td class="book-button-column">-->
-                    <!--{{#if bookable}}-->
-                    <!--{{#if mrp}}-->
-                    <!--{{> mrp-book-button-template this}}-->
-                    <!--{{else}}-->
-                    <!--{{#if payLaterOffer}}-->
-                    <!--{{> etp-book-button-template this}}-->
-                    <!--{{else}}-->
-                    <!--{{#if depositOffer}}-->
-                    <!--{{> etp-book-button-template this}}-->
-                    <!--{{else}}-->
-                    <!--{{> book-button-template this}}-->
-                    <!--{{/if}}-->
-                    <!--{{/if}}-->
-                    <!--{{/if}}-->
-                    <!--{{/if}}-->
-                    <!--</td>-->
-                    <!--</tr>-->
-                    <!--{{/each}}-->
+            <!--<td class="book-button-column">-->
+            <!--{{#if bookable}}-->
+            <!--{{#if mrp}}-->
+            <!--{{> mrp-book-button-template this}}-->
+            <!--{{else}}-->
+            <!--{{#if payLaterOffer}}-->
+            <!--{{> etp-book-button-template this}}-->
+            <!--{{else}}-->
+            <!--{{#if depositOffer}}-->
+            <!--{{> etp-book-button-template this}}-->
+            <!--{{else}}-->
+            <!--{{> book-button-template this}}-->
+            <!--{{/if}}-->
+            <!--{{/if}}-->
+            <!--{{/if}}-->
+            <!--{{/if}}-->
+            <!--</td>-->
+            <!--</tr>-->
+            <!--{{/each}}-->
 
 
             </tbody>

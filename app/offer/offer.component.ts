@@ -4,7 +4,8 @@ import {OfferService} from "./offer.service/offer.service";
 import {HTTP_PROVIDERS} from "@angular/http";
 import {IterablePipe} from '../pipes/iterable.pipe';
 import {MatchkeyPipe} from '../pipes/matchkey.pipe';
-
+import {RoomThumbnailComponent} from './room-thumbnail.component/room-thumbnail.component';
+import {RoomBasicInfoComponent} from './room-basic-info.component/room-basic-info.component';
 // enableProdMode();
 
 @Component({
@@ -15,7 +16,7 @@ import {MatchkeyPipe} from '../pipes/matchkey.pipe';
     //         </div>`,
     templateUrl:'offer.html',
     styleUrls: ['offer.css'],
-    directives: [NgFor],
+    directives: [NgFor, RoomThumbnailComponent, RoomBasicInfoComponent],
     pipes: [IterablePipe, MatchkeyPipe],
     viewProviders: [],
     providers: [OfferService, HTTP_PROVIDERS]
@@ -38,7 +39,6 @@ export class OfferComponent {
             .subscribe(
                 offers => {
                     console.log('..component ', offers);
-                    window['exp'] = offers.exp;
                     this.offers = offers
                 },
                 error => this.error = <any>error
