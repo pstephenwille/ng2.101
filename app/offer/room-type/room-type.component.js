@@ -18,7 +18,7 @@ var RoomTypeComponent = (function () {
     RoomTypeComponent.prototype.ngOnInit = function () {
     };
     RoomTypeComponent.prototype.ngAfterViewInit = function () {
-        console.log('..init ', this.roomInfo);
+        console.log('...ngAfterViewInit ', this.roomInfo);
     };
     __decorate([
         core_1.Input(), 

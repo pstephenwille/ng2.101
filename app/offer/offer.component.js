@@ -15,6 +15,7 @@ var http_1 = require("@angular/http");
 var iterable_pipe_1 = require('../pipes/iterable.pipe');
 var matchkey_pipe_1 = require('../pipes/matchkey.pipe');
 var room_type_component_1 = require('./room-type/room-type.component');
+var options_component_1 = require('./options/options.component');
 // enableProdMode();
 var OfferComponent = (function () {
     // @ViewChildren(RoomTypeComponent, RoomBasicInfoComponent) child:QueryList<RoomTypeComponent, RoomBasicInfoComponent>;
@@ -43,11 +44,12 @@ var OfferComponent = (function () {
             moduleId: module.id,
             selector: 'offer',
             // template: `<div [ngClass]="{'woot-woot': details.title, brown: details.id}" class="brown">
-            //               <div *ngIf="offers.exp | matchkey:['4334x','6447', '4334x']">exp</div>
-            //          </div>`,
+            //                <!--<div *ngIf="offers.exp | matchkey:['4334x','6447', '4334x']">exp</div>-->
+            //                 <div *ngIf="offers.exp && offers.exp['4334']">ok</div>
+            // </div>`,
             templateUrl: 'offer.html',
             styleUrls: ['offer.css'],
-            directives: [common_1.NgFor, room_type_component_1.RoomTypeComponent],
+            directives: [common_1.NgFor, room_type_component_1.RoomTypeComponent, options_component_1.OptionsComponent],
             pipes: [iterable_pipe_1.IterablePipe, matchkey_pipe_1.MatchkeyPipe],
             viewProviders: [],
             providers: [offer_service_1.OfferService, http_1.HTTP_PROVIDERS]

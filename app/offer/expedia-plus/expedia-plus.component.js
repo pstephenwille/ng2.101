@@ -9,25 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var ExpediaRewardsComponent = (function () {
-    function ExpediaRewardsComponent() {
-        console.log('expedia-rewards component');
+var ExpediaPlusComponent = (function () {
+    function ExpediaPlusComponent() {
+        console.log('expedia-plus component');
     }
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Object)
-    ], ExpediaRewardsComponent.prototype, "room", void 0);
-    ExpediaRewardsComponent = __decorate([
+    ], ExpediaPlusComponent.prototype, "room", void 0);
+    ExpediaPlusComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'expedia-rewards',
-            templateUrl: 'expedia-rewards.html',
+            selector: 'expedia-plus',
+            templateUrl: 'expedia-plus.html',
             styleUrls: [],
             providers: []
         }), 
         __metadata('design:paramtypes', [])
-    ], ExpediaRewardsComponent);
-    return ExpediaRewardsComponent;
+    ], ExpediaPlusComponent);
+    return ExpediaPlusComponent;
 }());
-exports.ExpediaRewardsComponent = ExpediaRewardsComponent;
-//# sourceMappingURL=expedia-rewards.component.js.map
+exports.ExpediaPlusComponent = ExpediaPlusComponent;
+//# sourceMappingURL=expedia-plus.component.js.map

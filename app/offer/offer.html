@@ -41,74 +41,21 @@
 
             <tr class="rate-plan"
                 [ngClass]="{'rate-plan-first': room.offers[0].isFeaturedOffer}">
+                <td [attr.rowspan]="room.offerCount" class="room-info">
+                    <room-type [room]="room"></room-type>
+                </td>
 
-                <room-type [room]="room"></room-type>
+                <td class="rate-features">
+                    <options [room]="room"></options>
+                </td>
+                <!--<options [room]="room"></options>-->
+                <!--<expeida-plus [room]="room"></expeida-plus>-->
+                <!--<avg-rate-per-night [room]="room"></avg-rate-per-night>-->
+                <!--<book-button [room]="room"></book-button>-->
+
 
 
             </tr>
-            <!-- td: rate-features -->
-            <!-- td: expedia-rewards -->
-            <!-- td: avg-rate -->
-            <!-- td: book-button-column -->
-            <!-- td: book-button-column -->
-
-
-            <!--</td>-->
-            <!--{{/unless}}-->
-
-            <!--<td class="rate-features">-->
-            <!--{{#if mrp}}-->
-            <!--{{> mrp-deal-template this}}-->
-            <!--{{else}}-->
-            <!--{{> rate-features-template this}}-->
-            <!--{{/if}}-->
-            <!--</td>-->
-
-            <!--<#&#45;&#45; Rewards Member Coupon (Expedia.com loyalty) &ndash;&gt;-->
-            <!--{{#if ../../displayExpediaRewardsColumn}}-->
-            <!--<td class="expedia-rewards">-->
-            <!--{{> rewards-member-coupon-template this}}-->
-            <!--</td>-->
-            <!--{{/if}}-->
-            <!--<td class="avg-rate">-->
-            <!--{{#if bookable}}-->
-            <!--<#&#45;&#45; Room pricing &ndash;&gt;-->
-            <!--{{> room-pricing-template this}}-->
-
-            <!--<#&#45;&#45; Room deal message &ndash;&gt;-->
-            <!--{{> room-deal-message-template this}}-->
-
-            <!--<#&#45;&#45; TAAP WRAPPER START: Display show commission link if it is a taap user&ndash;&gt;-->
-            <!--{{#if displayTaapContent}}-->
-            <!--{{> taap-commission-tooltip-template this}}-->
-            <!--{{/if}}-->
-            <!--<#&#45;&#45; TAAP WRAPPER END&ndash;&gt;-->
-
-            <!--{{else}}-->
-            <!--<#&#45;&#45; Room unavailable message &ndash;&gt;-->
-            <!--{{> room-unavailable-message-template this}}-->
-            <!--{{/if}}-->
-            <!--</td>-->
-
-            <!--<td class="book-button-column">-->
-            <!--{{#if bookable}}-->
-            <!--{{#if mrp}}-->
-            <!--{{> mrp-book-button-template this}}-->
-            <!--{{else}}-->
-            <!--{{#if payLaterOffer}}-->
-            <!--{{> etp-book-button-template this}}-->
-            <!--{{else}}-->
-            <!--{{#if depositOffer}}-->
-            <!--{{> etp-book-button-template this}}-->
-            <!--{{else}}-->
-            <!--{{> book-button-template this}}-->
-            <!--{{/if}}-->
-            <!--{{/if}}-->
-            <!--{{/if}}-->
-            <!--{{/if}}-->
-            <!--</td>-->
-            <!--</tr>-->
-            <!--{{/each}}-->
 
 
             </tbody>
