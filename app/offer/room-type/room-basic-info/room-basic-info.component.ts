@@ -10,6 +10,7 @@ import {Component, Input} from '@angular/core';
 
 export class RoomBasicInfoComponent{
     @Input() room;
+    
     constructor(){
         console.log('room-basic-info component');
     }

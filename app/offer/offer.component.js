@@ -14,10 +14,10 @@ var offer_service_1 = require("./offer.service/offer.service");
 var http_1 = require("@angular/http");
 var iterable_pipe_1 = require('../pipes/iterable.pipe');
 var matchkey_pipe_1 = require('../pipes/matchkey.pipe');
-var room_thumbnail_component_1 = require('./room-thumbnail.component/room-thumbnail.component');
-var room_basic_info_component_1 = require('./room-basic-info.component/room-basic-info.component');
+var room_type_component_1 = require('./room-type/room-type.component');
 // enableProdMode();
 var OfferComponent = (function () {
+    // @ViewChildren(RoomTypeComponent, RoomBasicInfoComponent) child:QueryList<RoomTypeComponent, RoomBasicInfoComponent>;
     function OfferComponent(_offerService) {
         this._offerService = _offerService;
         this.offers = [];
@@ -35,6 +35,9 @@ var OfferComponent = (function () {
             _this.offers = offers;
         }, function (error) { return _this.error = error; });
     };
+    OfferComponent.prototype.ngAfterViewInit = function () {
+        console.log('ngAfterViewInit ');
+    };
     OfferComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
@@ -44,7 +47,7 @@ var OfferComponent = (function () {
             //          </div>`,
             templateUrl: 'offer.html',
             styleUrls: ['offer.css'],
-            directives: [common_1.NgFor, room_thumbnail_component_1.RoomThumbnailComponent, room_basic_info_component_1.RoomBasicInfoComponent],
+            directives: [common_1.NgFor, room_type_component_1.RoomTypeComponent],
             pipes: [iterable_pipe_1.IterablePipe, matchkey_pipe_1.MatchkeyPipe],
             viewProviders: [],
             providers: [offer_service_1.OfferService, http_1.HTTP_PROVIDERS]
