@@ -12,6 +12,7 @@ import {RoomBasicInfoComponent} from "./room-basic-info/room-basic-info.componen
 export class RoomTypeComponent {
     @Input() room;
     @ViewChild(RoomBasicInfoComponent) roomInfo:RoomBasicInfoComponent;
+    
 
     constructor() {
         console.log('room-type component ');
@@ -21,7 +22,7 @@ export class RoomTypeComponent {
     }
 
     ngAfterViewInit() {
-        console.log('..init ', this.roomInfo);
+        console.log('...ngAfterViewInit ', this.roomInfo);
     }
 
 

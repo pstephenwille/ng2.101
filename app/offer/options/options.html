@@ -1,0 +1,79 @@
+<!--<td class="rate-features">-->
+<div *ngFor="let offer of room.offers">
+    ....{{offer.hasValueAdd}}
+    <div class="rate-policies">
+        <div *ngIf="offer.hasValueAdd" class="offer-value-add"><span class="icon"></span>
+            <div class="offer-value"><span class="offer-value-add-title free-text ">valueAdd.title</span>
+                <span class="offer-value-add-text free-text">{{valueAdd.text}}</span>
+            </div>
+        </div>
+        <div *ngIf="offer.freeCancellable">
+            <a href="#free-cancellation-link200731835-0"
+               class="free-cancellation-tooltip-link"
+               data-control="tooltip"
+               data-pos="tl"
+               data-arrow="true"
+               data-fade="out"
+               data-manual="none"
+               data-show-tooltip="true"
+               data-track="HOT.HIS.RoomsAndRates.Value.FreeCancellation">
+                <span class="icon icon-success"></span>
+                <span class="free-cancellation-short free-text">Free Cancellation</span>
+            </a>
+            <div id="free-cancellation-link200731835-0" class="hidden">
+                <h3 class="hd">You can cancel free of charge up
+                until
+                the cancellation window</h3>
+                <ul>
+                    <li> Cancellations or changes made after 6:00PM (Mountain Daylight Time (US &amp; Canada)) on Mon,
+                        Aug 1
+                        or no-shows are subject to a hotel fee equal to the first night's rate plus taxes and fees.
+                    </li>
+                </ul>
+            </div>
+            <div class="free-cancellation-deadline"> until Mon, Aug 1</div>
+        </div>
+    </div>
+    <div class="rate-includes"><span class="exp-9904"><div class="room-amenity payment-choice-tooltip-link">  <span
+        class="icon icon-success"
+        aria-hidden="true"></span>  <span class="free-text"
+                                          data-auto-id="book-now-rate-plan-id">  Book now, pay later  </span> </div></span>
+        <a href="#parking-200731835-0"
+           id="parking-link-200731835-0"
+           class="room-amenity"
+           data-control="tooltip"
+           data-pos="tl"
+           data-width="240"
+           data-arrow="true"
+           data-fade="out"
+           data-manual="none"
+           data-show-tooltip="true"
+           data-track="HOT.HIS.RoomsAndRates.Value.Parking">
+            <div class="room-amenity free-parking"><span class="icon icon-success"
+                                                         aria-hidden="true"></span><span class="free-text">Free Parking</span>
+            </div>
+        </a>
+        <div id="parking-200731835-0" class="hidden"><p>Parking is included in your stay</p></div>
+        <a href="#internet-200731835-0"
+           id="internet-link-200731835-0"
+           class="room-amenity"
+           data-control="tooltip"
+           data-pos="tl"
+           data-width="280"
+           data-arrow="true"
+           data-fade="out"
+           data-manual="none"
+           data-show-tooltip="true"
+           data-track="HOT.HIS.RoomsAndRates.Value.Internet">
+            <div class="room-amenity free-internet"><span class="icon icon-success" aria-hidden="true"></span><span
+                class="free-text">Free Internet</span></div>
+        </a>
+        <div id="internet-200731835-0" class="hidden"><p>Free Internet is available in this room</p></div>
+        <div class="room-amenity free-breakfast"><span class="icon icon-success"
+                                                       aria-hidden="true"></span><span class="free-text">Breakfast Available (Surcharge)</span>
+        </div>
+        <div class="room-amenity no-book-and-fees"><span class="icon icon-success" aria-hidden="true"></span> <span
+            class="free-text">No Expedia booking or credit card fees</span></div>
+    </div>
+</div>
+<!--</td>-->
