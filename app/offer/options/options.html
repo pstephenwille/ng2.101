@@ -3,7 +3,7 @@
     ....{{offer.hasValueAdd}}
     <div class="rate-policies">
         <div *ngIf="offer.hasValueAdd" class="offer-value-add"><span class="icon"></span>
-            <div class="offer-value"><span class="offer-value-add-title free-text ">valueAdd.title</span>
+            <div class="offer-value"><span class="offer-value-add-title free-text ">{{valueAdd.title}}</span>
                 <span class="offer-value-add-text free-text">{{valueAdd.text}}</span>
             </div>
         </div>
@@ -34,11 +34,14 @@
             <div class="free-cancellation-deadline"> until Mon, Aug 1</div>
         </div>
     </div>
-    <div class="rate-includes"><span class="exp-9904"><div class="room-amenity payment-choice-tooltip-link">  <span
-        class="icon icon-success"
-        aria-hidden="true"></span>  <span class="free-text"
-                                          data-auto-id="book-now-rate-plan-id">  Book now, pay later  </span> </div></span>
-        <a href="#parking-200731835-0"
+    <div class="rate-includes"><span class="exp-9904">
+
+        <div class="room-amenity payment-choice-tooltip-link">
+            <span class="icon icon-success" aria-hidden="true"></span>
+            <span class="free-text" data-auto-id="book-now-rate-plan-id">
+                Book now, pay later  </span> </div></span>
+
+        <a *ngIf="offer.freeParking" href="#parking-200731835-0"
            id="parking-link-200731835-0"
            class="room-amenity"
            data-control="tooltip"
@@ -49,10 +52,12 @@
            data-manual="none"
            data-show-tooltip="true"
            data-track="HOT.HIS.RoomsAndRates.Value.Parking">
-            <div class="room-amenity free-parking"><span class="icon icon-success"
-                                                         aria-hidden="true"></span><span class="free-text">Free Parking</span>
+            <div class="room-amenity free-parking">
+                <span class="icon icon-success" aria-hidden="true"></span>
+                <span class="free-text">Free Parking</span>
             </div>
         </a>
+
         <div id="parking-200731835-0" class="hidden"><p>Parking is included in your stay</p></div>
         <a href="#internet-200731835-0"
            id="internet-link-200731835-0"
