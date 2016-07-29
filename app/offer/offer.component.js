@@ -43,10 +43,13 @@ var OfferComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'offer',
-            // template: `<div [ngClass]="{'woot-woot': details.title, brown: details.id}" class="brown">
-            //                <!--<div *ngIf="offers.exp | matchkey:['4334x','6447', '4334x']">exp</div>-->
-            //                 <div *ngIf="offers.exp && offers.exp['4334']">ok</div>
-            // </div>`,
+            /*    template: `<div [ngClass]="{'woot-woot': details.title, brown: details.id}" class="brown">
+                                <!--<div *ngIf="offers.exp | matchkey:['4334x','6447', '4334x']">exp</div>-->
+                                 <!--<div *ngIf="offers.exp && offers.exp['4334']">ok</div>-->
+                                 <div *ngFor="let exp of offers.exp">
+                                    {{exp}}
+                                </div>
+                           </div>`,*/
             templateUrl: 'offer.html',
             styleUrls: ['offer.css'],
             directives: [common_1.NgFor, room_type_component_1.RoomTypeComponent, options_component_1.OptionsComponent],
