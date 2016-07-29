@@ -9,6 +9,7 @@ import {Component, Input} from '@angular/core';
 export class OptionsComponent{
     @Input() room;
     // @ViewChild()
+
     constructor(){
         console.log('options comp');
     }
