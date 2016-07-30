@@ -14,6 +14,7 @@ var offer_service_1 = require("./offer.service/offer.service");
 var http_1 = require("@angular/http");
 var iterable_pipe_1 = require('../pipes/iterable.pipe');
 var matchkey_pipe_1 = require('../pipes/matchkey.pipe');
+var keyIsTrue_pipe_1 = require('../pipes/keyIsTrue.pipe');
 var room_type_component_1 = require('./room-type/room-type.component');
 var options_component_1 = require('./options/options.component');
 // enableProdMode();
@@ -43,17 +44,11 @@ var OfferComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'offer',
-            /*    template: `<div [ngClass]="{'woot-woot': details.title, brown: details.id}" class="brown">
-                                <!--<div *ngIf="offers.exp | matchkey:['4334x','6447', '4334x']">exp</div>-->
-                                 <!--<div *ngIf="offers.exp && offers.exp['4334']">ok</div>-->
-                                 <div *ngFor="let exp of offers.exp">
-                                    {{exp}}
-                                </div>
-                           </div>`,*/
-            templateUrl: 'offer.html',
+            template: "<div [ngClass]=\"{'woot-woot': details.title, brown: details.id}\" class=\"brown\">\n    <!--<div *ngIf=\"offers.exp | matchkey:['4334x','6447', '4334x']\">exp</div>-->\n     <!--<div *ngIf=\"offers.exp && offers.exp['4334']\">ok</div>-->\n     <div *ngFor=\"let room of offers.rooms\">\n        room - {{rooms}} \n        <div *ngFor=\"let offer of room.offers\">\n            <div [outerHTML]=\"offer | keyIsTrue\"></div>\n        </div>\n    </div>\n</div>",
+            // templateUrl:'offer.html',
             styleUrls: ['offer.css'],
             directives: [common_1.NgFor, room_type_component_1.RoomTypeComponent, options_component_1.OptionsComponent],
-            pipes: [iterable_pipe_1.IterablePipe, matchkey_pipe_1.MatchkeyPipe],
+            pipes: [iterable_pipe_1.IterablePipe, matchkey_pipe_1.MatchkeyPipe, keyIsTrue_pipe_1.KeyIsTruePipe],
             viewProviders: [],
             providers: [offer_service_1.OfferService, http_1.HTTP_PROVIDERS]
         }), 

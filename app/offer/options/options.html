@@ -1,6 +1,6 @@
 <!--<td class="rate-features">-->
 <div *ngFor="let offer of room.offers">
-    ....{{offer.hasValueAdd}}
+    <!--....{{offer[/.+/] == true}}-->
     <div class="rate-policies">
         <div *ngIf="offer.hasValueAdd" class="offer-value-add"><span class="icon"></span>
             <div class="offer-value"><span class="offer-value-add-title free-text ">{{valueAdd.title}}</span>
