@@ -1,7 +1,7 @@
 import {Component, enableProdMode, ViewChildren, QueryList} from '@angular/core';
 import {NgFor} from '@angular/common';
 import {OfferService} from "./offer.service/offer.service";
-import {HTTP_PROVIDERS} from "@angular/http";
+import {Http, HTTP_PROVIDERS} from "@angular/http";
 import {IterablePipe} from '../pipes/iterable.pipe';
 import {MatchkeyPipe} from '../pipes/matchkey.pipe';
 import {KeyIsTruePipe} from '../pipes/keyIsTrue.pipe';
@@ -13,20 +13,14 @@ import {RoomBasicInfoComponent} from './room-type/room-basic-info/room-basic-inf
 
 // enableProdMode();
 
+var data2 = require('data/data.amd.js')();
 
 @Component({
     moduleId: module.id,
     selector: 'offer',
-    template: `<div [ngClass]="{'woot-woot': details.title, brown: details.id}" class="brown">
-    <!--<div *ngIf="offers.exp | matchkey:['4334x','6447', '4334x']">exp</div>-->
-     <!--<div *ngIf="offers.exp && offers.exp['4334']">ok</div>-->
-     <div *ngFor="let room of offers.rooms">
-        room - {{rooms}} 
-        <div *ngFor="let offer of room.offers">
-            <div [outerHTML]="offer | keyIsTrue"></div>
-        </div>
-    </div>
-</div>`,
+    template: `
+        <div>{{ugh}}</div>
+    `,
     // templateUrl:'offer.html',
     styleUrls: ['offer.css'],
     directives: [NgFor, RoomTypeComponent, OptionsComponent],
@@ -37,14 +31,16 @@ import {RoomBasicInfoComponent} from './room-type/room-basic-info/room-basic-inf
 
 export class OfferComponent {
     offers = [];
+    ugh = [];
     error:any;
     // @ViewChildren(RoomTypeComponent, RoomBasicInfoComponent) child:QueryList<RoomTypeComponent, RoomBasicInfoComponent>;
 
-    constructor(private _offerService:OfferService) {
+    constructor(private _offerService:OfferService, private http: Http) {
     }
 
     ngOnInit() {
-        this.getOffers();
+        // this.getOffers();
+         this.getData();
     }
 
     getOffers() {
@@ -52,15 +48,22 @@ export class OfferComponent {
             .getOffers()
             .subscribe(
                 offers => {
-                    console.log('..component ', offers);
+                    console.log('...component ', offers);
                     this.offers = offers
                 },
                 error => this.error = <any>error
             );
     }
 
+    getData(){
+        this.http.get('data/offers.json')
+            .map(res=>res.json().data)
+            .subscribe(data => this.ugh = data);
+    }
+
+
     ngAfterViewInit() {
-        console.log('ngAfterViewInit ');
+        console.log('ngAfterViewInit ', this.ugh);
 
     }
 

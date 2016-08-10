@@ -18,33 +18,43 @@ var keyIsTrue_pipe_1 = require('../pipes/keyIsTrue.pipe');
 var room_type_component_1 = require('./room-type/room-type.component');
 var options_component_1 = require('./options/options.component');
 // enableProdMode();
+var data2 = require('data/data.amd.js')();
 var OfferComponent = (function () {
     // @ViewChildren(RoomTypeComponent, RoomBasicInfoComponent) child:QueryList<RoomTypeComponent, RoomBasicInfoComponent>;
-    function OfferComponent(_offerService) {
+    function OfferComponent(_offerService, http) {
         this._offerService = _offerService;
+        this.http = http;
         this.offers = [];
+        this.ugh = [];
         this.details = { title: 'Hotel offer', id: '100', name: 'Hilton' };
     }
     OfferComponent.prototype.ngOnInit = function () {
-        this.getOffers();
+        // this.getOffers();
+        this.getData();
     };
     OfferComponent.prototype.getOffers = function () {
         var _this = this;
         this._offerService
             .getOffers()
             .subscribe(function (offers) {
-            console.log('..component ', offers);
+            console.log('...component ', offers);
             _this.offers = offers;
         }, function (error) { return _this.error = error; });
     };
+    OfferComponent.prototype.getData = function () {
+        var _this = this;
+        this.http.get('data/offers.json')
+            .map(function (res) { return res.json().data; })
+            .subscribe(function (data) { return _this.ugh = data; });
+    };
     OfferComponent.prototype.ngAfterViewInit = function () {
-        console.log('ngAfterViewInit ');
+        console.log('ngAfterViewInit ', this.ugh);
     };
     OfferComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'offer',
-            template: "<div [ngClass]=\"{'woot-woot': details.title, brown: details.id}\" class=\"brown\">\n    <!--<div *ngIf=\"offers.exp | matchkey:['4334x','6447', '4334x']\">exp</div>-->\n     <!--<div *ngIf=\"offers.exp && offers.exp['4334']\">ok</div>-->\n     <div *ngFor=\"let room of offers.rooms\">\n        room - {{rooms}} \n        <div *ngFor=\"let offer of room.offers\">\n            <div [outerHTML]=\"offer | keyIsTrue\"></div>\n        </div>\n    </div>\n</div>",
+            template: "\n        <div>{{ugh}}</div>\n    ",
             // templateUrl:'offer.html',
             styleUrls: ['offer.css'],
             directives: [common_1.NgFor, room_type_component_1.RoomTypeComponent, options_component_1.OptionsComponent],
@@ -52,7 +62,7 @@ var OfferComponent = (function () {
             viewProviders: [],
             providers: [offer_service_1.OfferService, http_1.HTTP_PROVIDERS]
         }), 
-        __metadata('design:paramtypes', [offer_service_1.OfferService])
+        __metadata('design:paramtypes', [offer_service_1.OfferService, http_1.Http])
     ], OfferComponent);
     return OfferComponent;
 }());
