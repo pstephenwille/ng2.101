@@ -1,12 +1,12 @@
 <!--<td class="rate-features">-->
 <div *ngFor="let offer of room.offers">
-    <!--....{{offer[/.+/] == true}}-->
     <div class="rate-policies">
         <div *ngIf="offer.hasValueAdd" class="offer-value-add"><span class="icon"></span>
             <div class="offer-value"><span class="offer-value-add-title free-text ">{{valueAdd.title}}</span>
                 <span class="offer-value-add-text free-text">{{valueAdd.text}}</span>
             </div>
         </div>
+
         <div *ngIf="offer.freeCancellable">
             <a href="#free-cancellation-link200731835-0"
                class="free-cancellation-tooltip-link"

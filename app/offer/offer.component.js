@@ -18,7 +18,6 @@ var keyIsTrue_pipe_1 = require('../pipes/keyIsTrue.pipe');
 var room_type_component_1 = require('./room-type/room-type.component');
 var options_component_1 = require('./options/options.component');
 // enableProdMode();
-var data2 = require('data/data.amd.js')();
 var OfferComponent = (function () {
     // @ViewChildren(RoomTypeComponent, RoomBasicInfoComponent) child:QueryList<RoomTypeComponent, RoomBasicInfoComponent>;
     function OfferComponent(_offerService, http) {
@@ -29,33 +28,22 @@ var OfferComponent = (function () {
         this.details = { title: 'Hotel offer', id: '100', name: 'Hilton' };
     }
     OfferComponent.prototype.ngOnInit = function () {
-        // this.getOffers();
-        this.getData();
+        this.getOffers();
     };
     OfferComponent.prototype.getOffers = function () {
         var _this = this;
         this._offerService
             .getOffers()
-            .subscribe(function (offers) {
-            console.log('...component ', offers);
-            _this.offers = offers;
-        }, function (error) { return _this.error = error; });
-    };
-    OfferComponent.prototype.getData = function () {
-        var _this = this;
-        this.http.get('data/offers.json')
-            .map(function (res) { return res.json().data; })
-            .subscribe(function (data) { return _this.ugh = data; });
+            .subscribe(function (offers) { return _this.offers = offers; }, function (error) { return _this.error = error; });
     };
     OfferComponent.prototype.ngAfterViewInit = function () {
-        console.log('ngAfterViewInit ', this.ugh);
+        console.log('ngAfterViewInit ', this.offers);
     };
     OfferComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'offer',
-            template: "\n        <div>{{ugh}}</div>\n    ",
-            // templateUrl:'offer.html',
+            templateUrl: 'offer.html',
             styleUrls: ['offer.css'],
             directives: [common_1.NgFor, room_type_component_1.RoomTypeComponent, options_component_1.OptionsComponent],
             pipes: [iterable_pipe_1.IterablePipe, matchkey_pipe_1.MatchkeyPipe, keyIsTrue_pipe_1.KeyIsTruePipe],

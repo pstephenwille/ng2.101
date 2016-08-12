@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var iterable_pipe_1 = require('../../pipes/iterable.pipe');
 var OptionsComponent = (function () {
     // @ViewChild()
     function OptionsComponent() {
@@ -23,6 +24,7 @@ var OptionsComponent = (function () {
             moduleId: module.id,
             selector: 'options',
             templateUrl: 'options.html',
+            pipes: [iterable_pipe_1.IterablePipe]
         }), 
         __metadata('design:paramtypes', [])
     ], OptionsComponent);

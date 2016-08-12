@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 `
     ],
     template:
-`    <h1>My First Angular 2 App, with TypeScript</h1>
+`    <h1>Angular 2 App with TypeScript</h1>
     <form name="ng2-form" id="ng2-form">
         <input [(ngModel)]="formModel.fname" name="fname" id="fname" type="text" placeholder="First name" />
         <input [(ngModel)]="formModel.lname" name="lname" id="lname" type="text" placeholder="Last name" />
@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
 })
 export class FormComponent {
     formModel = {fname:'woot', lname:null};
-
+    
     showModel(){
         console.log('form ', this.formModel);
     }

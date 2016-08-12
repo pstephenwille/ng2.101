@@ -22,7 +22,7 @@ var FormComponent = (function () {
             styles: [
                 "\n    input { display:block;}\n"
             ],
-            template: "    <h1>My First Angular 2 App, with TypeScript</h1>\n    <form name=\"ng2-form\" id=\"ng2-form\">\n        <input [(ngModel)]=\"formModel.fname\" name=\"fname\" id=\"fname\" type=\"text\" placeholder=\"First name\" />\n        <input [(ngModel)]=\"formModel.lname\" name=\"lname\" id=\"lname\" type=\"text\" placeholder=\"Last name\" />\n        <button (click)=\"showModel()\" type=\"button\">Sumbit</button>\n        <hr>\n    </form>\n",
+            template: "    <h1>Angular 2 App with TypeScript</h1>\n    <form name=\"ng2-form\" id=\"ng2-form\">\n        <input [(ngModel)]=\"formModel.fname\" name=\"fname\" id=\"fname\" type=\"text\" placeholder=\"First name\" />\n        <input [(ngModel)]=\"formModel.lname\" name=\"lname\" id=\"lname\" type=\"text\" placeholder=\"Last name\" />\n        <button (click)=\"showModel()\" type=\"button\">Sumbit</button>\n        <hr>\n    </form>\n",
         }), 
         __metadata('design:paramtypes', [])
     ], FormComponent);

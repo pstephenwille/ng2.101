@@ -9,7 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var room_thumbnail_component_1 = require("./room-thumbnail/room-thumbnail.component");
 var room_basic_info_component_1 = require("./room-basic-info/room-basic-info.component");
 var RoomTypeComponent = (function () {
     function RoomTypeComponent() {
@@ -33,7 +32,7 @@ var RoomTypeComponent = (function () {
             moduleId: module.id,
             selector: 'room-type',
             templateUrl: 'room-type.html',
-            directives: [room_thumbnail_component_1.RoomThumbnailComponent, room_basic_info_component_1.RoomBasicInfoComponent]
+            directives: [room_basic_info_component_1.RoomBasicInfoComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], RoomTypeComponent);
