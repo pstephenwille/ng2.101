@@ -3,5 +3,5 @@ import { FormComponent } from './form.component';
 import {OfferComponent} from './offer/offer.component';
 
 bootstrap(FormComponent);
-bootstrap(OfferComponent);
+window.app = bootstrap(OfferComponent);
 
