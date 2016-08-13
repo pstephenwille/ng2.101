@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+let formData = require('data/form.json.js');
 
 
 @Component({
@@ -9,36 +11,46 @@ import { Component } from '@angular/core';
         .ng-invalid { border-left: 5px solid #a94442; /* red */ }
     `],
     template:`
-    {{diagnostics}}<!-- diagnostic not working -->
-    <form #theForm="ngForm" name="ng2Form" id="ng2Form">
-        <input [(ngModel)]="ng2Form.fname" 
-            name="fname" id="fname" 
-            type="text" 
-            required
-            placeholder="First name" />
-        <input [(ngModel)]="ng2Form.lname" 
-            name="lname" id="lname" 
-            type="text" 
-            #lname="ngModel"
-            required
-            placeholder="Last name" />
-         <!--<div [hidden]="lname.valid || lname.pristine">Last name is required</div>-->
-        <button (click)="showModel($event)" 
-            [disabled]="!theForm.form.valid || theForm.form.pristine"
-            type="button">Sumbit</button>
-        <hr>
-    </form>
+       {{diagnostics}}
+        <form #survey="ngForm" name="survey">
+           <button (click)="showModel(survey)" type="button">Sumbit</button>
+            <div *ngFor="let section of formData; let i = index">
+                <h3>{{section.intro}}</h3>
+                <div *ngFor="let q of section.questions; let ii = index">
+                    <h4>q.text: {{q.text}}</h4>
+                    <div *ngFor="let a of q.answers" type="q.type">
+                        <label *ngIf="q.type !== 'select'" for="q.id">a.text: {{a.text}} - q.type: {{q.type}}</label>
+                        <input *ngIf="q.type == 'checkbox'" type="checkbox"
+                            name="q.id"
+                            (click)="ng2Form[q.id +'_'+ a.id] = a.score"/>
+                        <input *ngIf="q.type == 'radio'" type="radio"
+                            name="q.id"
+                            (click)="ng2Form[q.id] = a.score"/>
+                    </div>
+                    <h4 *ngIf="q.type == 'select'">{{q.text}}</h4>
+                    <select *ngIf="q.type == 'select'" name="q.id" [(ngModel)]="ng2Form[q.id]">
+                        <option *ngFor="let a of q.answers; let iii = index;" 
+                            [selected]="(iii == 0)?'selected':null"
+                            [value]="a.id">{{a.text}}</option>
+                    </select>
+                </div>
+            </div>
+        </form>
 `,
   // templateUrl: 'app/html/form.component.html'
 })
 export class FormComponent {
     public ng2Form = {};
-    
-    constructor(){}
+    public formData = {};
+
+    constructor(){
+        this.formData = formData;
+
+    }
 
     showModel(arg){
         window['woot'] = arg;
-        console.log('form ', this.ng2Form);
+        console.log('form ', arg, this.ng2Form);
     }
     get diagnostics(){ return JSON.stringify(this.ng2Form); }
 }
