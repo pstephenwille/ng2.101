@@ -9,11 +9,46 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var iterable_pipe_1 = require('../../../pipes/iterable.pipe');
 var RoomBasicInfoComponent = (function () {
     function RoomBasicInfoComponent() {
-        console.log('room-basic-info component ', this.room);
+        this.offers = [];
     }
+    RoomBasicInfoComponent.prototype.ngAfterContentInit = function () {
+        this.offers = this.room.offers.map(function (offer) {
+            return [Object.entries(offer)];
+        });
+        console.log('room-basic-info component ', this.offers);
+    };
+    /**
+    * The class constructor is called before any other lifecycle hook.
+    * Use it to inject dependencies, but avoid any
+    * serious work here.*/
+    RoomBasicInfoComponent.prototype.ngOnChanges = function (changeRecord) { };
+    /**
+    * Called after every change to input properties and before processing content or child views.*/
+    RoomBasicInfoComponent.prototype.ngOnInit = function () { };
+    /**
+    * Called after the constructor, initializing input properties,
+     * and the first call to ngOnChanges.*/
+    RoomBasicInfoComponent.prototype.ngDoCheck = function () { };
+    /**
+     * Called every time that the input properties of a component or a directive are checked.
+     * Use it to extend change
+     *  detection by performing a custom check.*/
+    // ngAfterContentInit() {  }
+    /**
+     * Called after ngOnInit when the component's or directive's content has been initialized.*/
+    RoomBasicInfoComponent.prototype.ngAfterContentChecked = function () { };
+    /**
+     * Called after every check of the component's or directive's content.*/
+    RoomBasicInfoComponent.prototype.ngAfterViewInit = function () { };
+    /**
+     * Called after ngAfterContentInit when the component's view has been initialized.
+     * Applies to components only.*/
+    RoomBasicInfoComponent.prototype.ngAfterViewChecked = function () { };
+    /**
+     * Called after every check of the component's view. Applies to components only.*/
+    RoomBasicInfoComponent.prototype.ngOnDestroy = function () { };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Object)
@@ -25,7 +60,7 @@ var RoomBasicInfoComponent = (function () {
             templateUrl: 'room-basic-info.html',
             styleUrls: [],
             providers: [],
-            pipes: [iterable_pipe_1.IterablePipe]
+            pipes: []
         }), 
         __metadata('design:paramtypes', [])
     ], RoomBasicInfoComponent);

@@ -12,14 +12,12 @@ var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
 var offer_service_1 = require("./offer.service/offer.service");
 var http_1 = require("@angular/http");
-var iterable_pipe_1 = require('../pipes/iterable.pipe');
 var matchkey_pipe_1 = require('../pipes/matchkey.pipe');
 var keyIsTrue_pipe_1 = require('../pipes/keyIsTrue.pipe');
 var room_type_component_1 = require('./room-type/room-type.component');
 var options_component_1 = require('./options/options.component');
 // enableProdMode();
 var OfferComponent = (function () {
-    // @ViewChildren(RoomTypeComponent, RoomBasicInfoComponent) child:QueryList<RoomTypeComponent, RoomBasicInfoComponent>;
     function OfferComponent(_offerService, http) {
         this._offerService = _offerService;
         this.http = http;
@@ -36,9 +34,36 @@ var OfferComponent = (function () {
             .getOffers()
             .subscribe(function (offers) { return _this.offers = offers; }, function (error) { return _this.error = error; });
     };
-    OfferComponent.prototype.ngAfterViewInit = function () {
-        console.log('ngAfterViewInit ', this.offers);
-    };
+    /**
+    * The class constructor is called before any other lifecycle hook.
+    * Use it to inject dependencies, but avoid any
+    * serious work here.*/
+    OfferComponent.prototype.ngOnChanges = function (changeRecord) { };
+    /**
+    * Called after every change to input properties and before processing content or child views.*/
+    // ngOnInit() {  }
+    /**
+    * Called after the constructor, initializing input properties,
+     * and the first call to ngOnChanges.*/
+    OfferComponent.prototype.ngDoCheck = function () { };
+    /**
+     * Called every time that the input properties of a component or a directive are checked.
+     * Use it to extend change
+     *  detection by performing a custom check.*/
+    OfferComponent.prototype.ngAfterContentInit = function () { };
+    /**
+     * Called after ngOnInit when the component's or directive's content has been initialized.*/
+    OfferComponent.prototype.ngAfterContentChecked = function () { };
+    /**
+     * Called after every check of the component's or directive's content.*/
+    OfferComponent.prototype.ngAfterViewInit = function () { };
+    /**
+     * Called after ngAfterContentInit when the component's view has been initialized.
+     * Applies to components only.*/
+    OfferComponent.prototype.ngAfterViewChecked = function () { };
+    /**
+     * Called after every check of the component's view. Applies to components only.*/
+    OfferComponent.prototype.ngOnDestroy = function () { };
     OfferComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
@@ -46,7 +71,7 @@ var OfferComponent = (function () {
             templateUrl: 'offer.html',
             styleUrls: ['offer.css'],
             directives: [common_1.NgFor, room_type_component_1.RoomTypeComponent, options_component_1.OptionsComponent],
-            pipes: [iterable_pipe_1.IterablePipe, matchkey_pipe_1.MatchkeyPipe, keyIsTrue_pipe_1.KeyIsTruePipe],
+            pipes: [matchkey_pipe_1.MatchkeyPipe, keyIsTrue_pipe_1.KeyIsTruePipe],
             viewProviders: [],
             providers: [offer_service_1.OfferService, http_1.HTTP_PROVIDERS]
         }), 

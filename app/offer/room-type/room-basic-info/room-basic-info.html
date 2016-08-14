@@ -1,6 +1,8 @@
 <div class="room-basic-info">
-    <div *ngFor="let offer of room.offers">
-        {{offer | iterable}}
+    <div *ngFor="let offer of offers; let i = index;">
+        <div *ngFor="let o of offer[i]">
+           <p *ngIf="o[0] == 'ratePlanCode'">{{o}}</p>
+        </div>
     </div>
     <div *ngIf="room.showBestValue" class="best-value">
         <span class="icon icon-shop" aria-hidden="true"></span>
