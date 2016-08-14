@@ -9,27 +9,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var iterable_pipe_1 = require('../../../pipes/iterable.pipe');
-var RoomBasicInfoComponent = (function () {
-    function RoomBasicInfoComponent() {
-        console.log('room-basic-info component ', this.room);
+/*
+ * returns the value from the matched key
+ * */
+var LoopPipe = (function () {
+    function LoopPipe() {
     }
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], RoomBasicInfoComponent.prototype, "room", void 0);
-    RoomBasicInfoComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'room-basic-info',
-            templateUrl: 'room-basic-info.html',
-            styleUrls: [],
-            providers: [],
-            pipes: [iterable_pipe_1.IterablePipe]
-        }), 
+    LoopPipe.prototype.transform = function (obj, keys) {
+        try {
+            var items_1 = '';
+            Object.keys(obj).forEach(function (key) {
+                if (obj[key] == true) {
+                    items_1 += "<p>" + key + "</p>";
+                }
+                ;
+            });
+            return items_1;
+        }
+        catch (e) {
+            console.log('...pipe: keyIsTrue error ', e);
+        }
+    };
+    LoopPipe = __decorate([
+        core_1.Pipe({ name: 'loop' }), 
         __metadata('design:paramtypes', [])
-    ], RoomBasicInfoComponent);
-    return RoomBasicInfoComponent;
+    ], LoopPipe);
+    return LoopPipe;
 }());
-exports.RoomBasicInfoComponent = RoomBasicInfoComponent;
-//# sourceMappingURL=room-basic-info.component.js.map
+exports.LoopPipe = LoopPipe;
+//# sourceMappingURL=loop.pipe.js.map

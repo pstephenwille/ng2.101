@@ -11,22 +11,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var room_basic_info_component_1 = require("./room-basic-info/room-basic-info.component");
 var RoomTypeComponent = (function () {
+    // @ViewChild(RoomBasicInfoComponent) roomInfo:RoomBasicInfoComponent;
     function RoomTypeComponent() {
         console.log('room-type component ');
     }
     RoomTypeComponent.prototype.ngOnInit = function () {
     };
     RoomTypeComponent.prototype.ngAfterViewInit = function () {
-        console.log('...ngAfterViewInit ', this.roomInfo);
+        console.log('...ngAfterViewInit ', this);
     };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Object)
     ], RoomTypeComponent.prototype, "room", void 0);
-    __decorate([
-        core_1.ViewChild(room_basic_info_component_1.RoomBasicInfoComponent), 
-        __metadata('design:type', room_basic_info_component_1.RoomBasicInfoComponent)
-    ], RoomTypeComponent.prototype, "roomInfo", void 0);
     RoomTypeComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

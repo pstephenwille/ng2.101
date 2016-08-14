@@ -17,7 +17,7 @@ import {Pipe, PipeTransform} from '@angular/core';
 export class IterablePipe implements PipeTransform {
     transform(iterable: any, args: any[]): any {
         let result = [];
-
+debugger;
         if(iterable.entries) {
             iterable.forEach((key, value) => {
                 result.push({key, value});

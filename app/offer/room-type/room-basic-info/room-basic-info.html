@@ -1,4 +1,7 @@
 <div class="room-basic-info">
+    <div *ngFor="let offer of room.offers">
+        {{offer | iterable}}
+    </div>
     <div *ngIf="room.showBestValue" class="best-value">
         <span class="icon icon-shop" aria-hidden="true"></span>
         &nbsp;Best Value!

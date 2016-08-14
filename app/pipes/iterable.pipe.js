@@ -27,6 +27,7 @@ var IterablePipe = (function () {
     }
     IterablePipe.prototype.transform = function (iterable, args) {
         var result = [];
+        debugger;
         if (iterable.entries) {
             iterable.forEach(function (key, value) {
                 result.push({ key: key, value: value });
