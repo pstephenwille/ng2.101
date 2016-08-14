@@ -13,7 +13,7 @@ let formData = require('data/form.json.js');
     template:`
        {{diagnostics}}
         <form #survey="ngForm" name="survey">
-           <button (click)="showModel(survey)" type="button">Sumbit</button>
+           <button (click)="showModel($event)" type="button">Sumbit</button>
             <div *ngFor="let section of formData; let i = index">
                 <h3>{{section.intro}}</h3>
                 <div *ngFor="let q of section.questions; let ii = index">
@@ -48,9 +48,8 @@ export class FormComponent {
 
     }
 
-    showModel(arg){
-        window['woot'] = arg;
-        console.log('form ', arg, this.ng2Form);
+    showModel(event){
+        console.log('form ', this.ng2Form);
     }
     get diagnostics(){ return JSON.stringify(this.ng2Form); }
 }
