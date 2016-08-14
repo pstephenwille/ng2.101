@@ -13,9 +13,21 @@ let formData = require('data/form.json.js');
     template:`
        {{diagnostics}}
         <form #survey="ngForm" name="survey">
-           <button (click)="showModel($event)" type="button">Sumbit</button>
+           <button (click)="showModel(ngForm)" type="button">Sumbit</button>
             <div *ngFor="let section of formData; let i = index">
+                <h3>Name:</h3>
+                <input type="text" 
+                    name="name"
+                    required
+                    pattern="[a-zA-Z]+"
+                    maxlength="5"
+                    #name="ngForm"
+                    [(ngModel)]="ng2Form['name']"
+                />
+                <h1 [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                    Name is required</h1>
                 <h3>{{section.intro}}</h3>
+
                 <div *ngFor="let q of section.questions; let ii = index">
                     <h4>q.text: {{q.text}}</h4>
                     <div *ngFor="let a of q.answers" type="q.type">
@@ -28,9 +40,10 @@ let formData = require('data/form.json.js');
                             (click)="ng2Form[q.id] = a.score"/>
                     </div>
                     <h4 *ngIf="q.type == 'select'">{{q.text}}</h4>
-                    <select *ngIf="q.type == 'select'" name="q.id" [(ngModel)]="ng2Form[q.id]">
+                    <select *ngIf="q.type == 'select'" name="q.id" [(ngModel)]="ng2Form[q.id]"
+                        form="survey" value="woot">
                         <option *ngFor="let a of q.answers; let iii = index;" 
-                            [selected]="(iii == 0)?'selected':null"
+                            [selected]="(iii == 0)?'true':null"
                             [value]="a.id">{{a.text}}</option>
                     </select>
                 </div>
@@ -49,7 +62,7 @@ export class FormComponent {
     }
 
     showModel(event){
-        console.log('form ', this.ng2Form);
+        console.log('form ', event);
     }
     get diagnostics(){ return JSON.stringify(this.ng2Form); }
 }
