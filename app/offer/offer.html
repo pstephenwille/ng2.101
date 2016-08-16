@@ -17,6 +17,8 @@
             <tr>
                 <th id="room-type-header">Room Type</th>
                 <th id="rate-features-header">Options</th>
+
+<!-- ngIf toggles display -->
                 <th *ngIf="offers.displayExpediaRewardsColumn" id="rewards-header">
                     Expedia+
                 </th>
@@ -27,7 +29,7 @@
             </tr>
             </thead>
 
-            <!-- each room -->
+<!-- ngFor each room -->
             <tbody *ngFor="let room of offers.rooms; let i = index"
                    class="room room-above-fold"
                    [ngClass]="{'first-room-featured': room.showBestValue, 'single-offer-room': room.isSingleOfferRoom}">
@@ -42,12 +44,14 @@
                 [ngClass]="{'rate-plan-first': room.offers[0].isFeaturedOffer}">
                 <td [attr.rowspan]="room.offerCount" class="room-info">
 
+<!-- custom directive: gets offers.room[i] as room-->
                     <room-type [room]="room"></room-type>
 
                 </td>
 
                 <td class="rate-features">
 
+<!-- custom directive: gets offers.room[i] as room  -->
                     <options [room]="room"></options>
 
                 </td>

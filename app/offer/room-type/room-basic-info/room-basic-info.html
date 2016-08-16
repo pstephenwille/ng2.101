@@ -1,4 +1,6 @@
 <div class="room-basic-info">
+
+<!-- ngFor room.offers -->
     <div *ngFor="let offer of offers; let i = index;">
         <div *ngFor="let o of offer[i]">
            <p *ngIf="o[0] == 'ratePlanCode'">{{o}}</p>
